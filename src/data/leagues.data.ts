@@ -35,7 +35,7 @@ export const leagueRecords: LeagueRecord[] = [
     lastActive: new Date('2024/12/06'),
     tags: ['Boston', 'Massachusetts', 'BRD'],
 
-    loc: { lat: 41.792555356161515, lng: 71.32031083049861 },
+    loc: { lat: 41.792555356161515, lng: -71.32031083049861 },
   },
   {
     name: 'Western Mass Roller Derby',
