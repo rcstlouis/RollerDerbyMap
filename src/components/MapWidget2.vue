@@ -27,7 +27,9 @@ onMounted(() => {
           :options="{ position: league.loc, anchorPoint: 'BOTTOM_CENTER' }">
           <v-card style="text-align: center; height:78px; width: 78px" class="pa-1">
             <div style="color:black">{{ league.name }}</div>
-            <img src="/logo.svg" style="width:40px; height: 40px;" />
+            <img v-if="league.logo === '/img/leagues/WFTDA/trans.png'" src="/logo.svg"
+              style="width:40px; height: 40px;" />
+            <img v-else :src="league.logo" style="width:40px; height: 40px;" />
           </v-card>
         </CustomMarker>
       </MarkerCluster>

@@ -1,0 +1,3482 @@
+[
+
+{
+    "name": "Acadiana Roller Derby",
+    "country": "us",
+    "city": "Lafeyette, LA, us",
+    "loc": {
+        "lat": "36.9597178225053",
+        "lng": "-86.40764598892768"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/acadiana-roller-derby/"
+},
+{
+    "name": "Adelaide Roller Derby",
+    "country": "au",
+    "city": "Adelaide, au",
+    "loc": {
+        "lat": "-34.9281805",
+        "lng": "138.5999312"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/adelaide-roller-derby/"
+},
+{
+    "name": "Alamo City Roller Derby",
+    "country": "us",
+    "city": "San Antonio, TX, us",
+    "loc": {
+        "lat": "29.4246002",
+        "lng": "-98.4951405"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/alamo-city-roller-derby/"
+},
+{
+    "name": "Albany All Stars",
+    "country": "us",
+    "city": "Albany, NY, us",
+    "loc": {
+        "lat": "42.6511674",
+        "lng": "-73.754968"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/albany-all-stars/"
+},
+{
+    "name": "Amsterdam Roller Derby",
+    "country": "nl",
+    "city": "Amsterdam, nl",
+    "loc": {
+        "lat": "52.3730796",
+        "lng": "4.8924534"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/amsterdam-roller-derby/"
+},
+{
+    "name": "Angel City Derby",
+    "country": "us",
+    "city": "Los Angeles, CA, us",
+    "loc": {
+        "lat": "34.0536909",
+        "lng": "-118.242766"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/angel-city-derby/"
+},
+{
+    "name": "Ann Arbor Roller Derby",
+    "country": "us",
+    "city": "Ann Arbor, MI, us",
+    "loc": {
+        "lat": "42.2813722",
+        "lng": "-83.7484616"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/ann-arbor-roller-derby/"
+},
+{
+    "name": "Kaiserslautern Roller Derby",
+    "country": "de",
+    "city": "Rhineland-Pfalz, de",
+    "loc": {
+        "lat": "49.9531599",
+        "lng": "7.310646"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/kaiserslautern-roller-derby/"
+},
+{
+    "name": "Appalachian Roller Derby",
+    "country": "us",
+    "city": "Boone, NC, us",
+    "loc": {
+        "lat": "36.2187873",
+        "lng": "-81.684004"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/appalachian-roller-derby/"
+},
+{
+    "name": "Arch Rival Roller Derby",
+    "country": "us",
+    "city": "Saint Louis, MO, us",
+    "loc": {
+        "lat": "38.6280278",
+        "lng": "-90.1910154"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/arch-rival-roller-derby/"
+},
+{
+    "name": "Arizona Roller Derby",
+    "country": "us",
+    "city": "Phoenix, AZ, us",
+    "loc": {
+        "lat": "33.4484367",
+        "lng": "-112.074141"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/arizona-roller-derby/"
+},
+{
+    "name": "Salt City Roller Derby",
+    "country": "us",
+    "city": "Syracuse, NY, us",
+    "loc": {
+        "lat": "43.0481221",
+        "lng": "-76.1474244"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/salt-city-roller-derby/"
+},
+{
+    "name": "Assassination City Roller Derby",
+    "country": "us",
+    "city": "Dallas, TX, us",
+    "loc": {
+        "lat": "32.7762719",
+        "lng": "-96.7968559"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/assassination-city-roller-derby/"
+},
+{
+    "name": "Atlanta Roller Derby",
+    "country": "us",
+    "city": "Atlanta, GA, us",
+    "loc": {
+        "lat": "33.7489924",
+        "lng": "-84.3902644"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/atlanta-roller-derby/"
+},
+{
+    "name": "Auckland Roller Derby",
+    "country": "nz",
+    "city": "Auckland, nz",
+    "loc": {
+        "lat": "-36.852095",
+        "lng": "174.7631803"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/auckland-roller-derby/"
+},
+{
+    "name": "Auld Reekie Roller Derby",
+    "country": "gb",
+    "city": "Edinburgh, Scotland, gb",
+    "loc": {
+        "lat": "55.9533456",
+        "lng": "-3.1883749"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/auld-reekie-roller-derby/"
+},
+{
+    "name": "Aurora 88s Roller Derby",
+    "country": "us",
+    "city": "Aurora, IL, us",
+    "loc": {
+        "lat": "41.7571701",
+        "lng": "-88.3147539"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/aurora-88s-roller-derby/"
+},
+{
+    "name": "Bakersfield Diamond Divas",
+    "country": "us",
+    "city": "Bakersfield, CA, us",
+    "loc": {
+        "lat": "35.3738712",
+        "lng": "-119.019463"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/bakersfield-diamond-divas/"
+},
+{
+    "name": "Barcelona Roller Derby",
+    "country": "es",
+    "city": "Barcelona, es",
+    "loc": {
+        "lat": "41.3828939",
+        "lng": "2.1774322"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/barcelona-roller-derby/"
+},
+{
+    "name": "Bay Area Derby",
+    "country": "us",
+    "city": "San Francisco, CA, us",
+    "loc": {
+        "lat": "37.7792588",
+        "lng": "-122.4193286"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/bay-area-derby/"
+},
+{
+    "name": "Bay State Brawlers",
+    "country": "us",
+    "city": "Fitchburg, MA, us",
+    "loc": {
+        "lat": "42.5854371",
+        "lng": "-71.8046023"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/bay-state-brawlers/"
+},
+{
+    "name": "Panhandle United Roller Derby",
+    "country": "us",
+    "city": "Ft Walton, FL, us",
+    "loc": {
+        "lat": "30.64060885691454",
+        "lng": "-86.18765852300241"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/panhandle-united-roller-derby/"
+},
+{
+    "name": "Bear City Roller Derby",
+    "country": "de",
+    "city": "Berlin, de",
+    "loc": {
+        "lat": "52.510885",
+        "lng": "13.3989367"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/bear-city-roller-derby/"
+},
+{
+    "name": "Belfast Roller Derby",
+    "country": "gb",
+    "city": "Belfast, Northern Ireland, gb",
+    "loc": {
+        "lat": "54.596391",
+        "lng": "-5.9301829"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/belfast-roller-derby/"
+},
+{
+    "name": "Bellingham Roller Betties",
+    "country": "us",
+    "city": "Bellingham, WA, us",
+    "loc": {
+        "lat": "48.7544012",
+        "lng": "-122.478836"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/bellingham-roller-betties/"
+},
+{
+    "name": "Big Easy Roller Derby",
+    "country": "us",
+    "city": "New Orleans, LA, us",
+    "loc": {
+        "lat": "29.9759983",
+        "lng": "-90.0782127"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/big-easy-roller-derby/"
+},
+{
+    "name": "Birmingham Roller Derby",
+    "country": "gb",
+    "city": "Birmingham, England, gb",
+    "loc": {
+        "lat": "52.4796992",
+        "lng": "-1.9026911"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/birmingham-roller-derby/"
+},
+{
+    "name": "Black-n-Bluegrass Roller Derby",
+    "country": "us",
+    "city": "Latonia, KY, us",
+    "loc": {
+        "lat": "39.0500937",
+        "lng": "-84.5052803"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/black-n-bluegrass-roller-derby/"
+},
+{
+    "name": "Black Rose Rollers",
+    "country": "us",
+    "city": "Hanover, PA, us",
+    "loc": {
+        "lat": "39.8005316",
+        "lng": "-76.9832568"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/black-rose-rollers/"
+},
+{
+    "name": "Blue Ridge Roller Derby",
+    "country": "us",
+    "city": "Asheville, NC, us",
+    "loc": {
+        "lat": "35.595363",
+        "lng": "-82.5508407"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/blue-ridge-roller-derby/"
+},
+{
+    "name": "Boston Roller Derby",
+    "country": "us",
+    "city": "Boston, MA, us",
+    "loc": {
+        "lat": "42.3554334",
+        "lng": "-71.060511"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/boston-roller-derby/"
+},
+{
+    "name": "Boulder County Roller Derby",
+    "country": "us",
+    "city": "Boulder, CO, us",
+    "loc": {
+        "lat": "40.0149856",
+        "lng": "-105.270545"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/boulder-county-roller-derby/"
+},
+{
+    "name": "Brandywine Roller Derby",
+    "country": "us",
+    "city": "Downingtown, PA, us",
+    "loc": {
+        "lat": "40.0064958",
+        "lng": "-75.7032742"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/brandywine-roller-derby/"
+},
+{
+    "name": "Brewcity Bruisers",
+    "country": "us",
+    "city": "Milwaukee, WI, us",
+    "loc": {
+        "lat": "43.0386475",
+        "lng": "-87.9090751"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/brewcity-bruisers/"
+},
+{
+    "name": "Brussels Roller Derby",
+    "country": "be",
+    "city": "Brussels, be",
+    "loc": {
+        "lat": "50.8465573",
+        "lng": "4.351697"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/brussels-roller-derby/"
+},
+{
+    "name": "Burning River Roller Derby",
+    "country": "us",
+    "city": "Cleveland, OH, us",
+    "loc": {
+        "lat": "41.4996574",
+        "lng": "-81.6936772"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/burning-river-roller-derby/"
+},
+{
+    "name": "Calgary Roller Derby",
+    "country": "ca",
+    "city": "Calgary, AB, ca",
+    "loc": {
+        "lat": "51.0456064",
+        "lng": "-114.057541"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/calgary-roller-derby/"
+},
+{
+    "name": "Canberra Roller Derby League",
+    "country": "au",
+    "city": "Canberra, ACT, au",
+    "loc": {
+        "lat": "-35.2975906",
+        "lng": "149.1012676"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/canberra-roller-derby-league/"
+},
+{
+    "name": "Cape Fear Roller Derby",
+    "country": "us",
+    "city": "Wilmington, NC, us",
+    "loc": {
+        "lat": "34.2257282",
+        "lng": "-77.9447107"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/cape-fear-roller-derby/"
+},
+{
+    "name": "Carolina Roller Derby",
+    "country": "us",
+    "city": "Raleigh, NC, us",
+    "loc": {
+        "lat": "35.7803977",
+        "lng": "-78.6390989"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/carolina-roller-derby/"
+},
+{
+    "name": "Cedar Valley Roller Derby",
+    "country": "us",
+    "city": "Waterloo, IA, us",
+    "loc": {
+        "lat": "42.498275",
+        "lng": "-92.3328743"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/cedar-valley-roller-derby/"
+},
+{
+    "name": "Rock Town Roller Derby",
+    "country": "us",
+    "city": "Little Rock, AR, us",
+    "loc": {
+        "lat": "34.7465071",
+        "lng": "-92.2896267"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/rock-town-roller-derby/"
+},
+{
+    "name": "Central Coast Roller Derby",
+    "country": "us",
+    "city": "Paso Robles, CA, us",
+    "loc": {
+        "lat": "35.6227823",
+        "lng": "-120.6880521"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/central-coast-roller-derby/"
+},
+{
+    "name": "Roller Derby of Central Kentucky",
+    "country": "us",
+    "city": "Lexington, KY, us",
+    "loc": {
+        "lat": "38.0464066",
+        "lng": "-84.4970393"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/roller-derby-of-central-kentucky/"
+},
+{
+    "name": "Central New York Roller Derby",
+    "country": "us",
+    "city": "Utica/Rome, NY, us",
+    "loc": {
+        "lat": "43.08044731026794",
+        "lng": "-75.51684643793435"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/central-new-york-roller-derby/"
+},
+{
+    "name": "Charlotte Roller Derby",
+    "country": "us",
+    "city": "Charlotte, NC, us",
+    "loc": {
+        "lat": "35.2272086",
+        "lng": "-80.8430827"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/charlotte-roller-derby/"
+},
+{
+    "name": "Charlottesville Derby Dames",
+    "country": "us",
+    "city": "Charlottesville, VA, us",
+    "loc": {
+        "lat": "38.029306",
+        "lng": "-78.4766781"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/charlottesville-derby-dames/"
+},
+{
+    "name": "Chattanooga Roller Derby",
+    "country": "us",
+    "city": "Chattanooga, TN, us",
+    "loc": {
+        "lat": "35.0457219",
+        "lng": "-85.3094883"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/chattanooga-roller-derby/"
+},
+{
+    "name": "Cherry City Roller Derby",
+    "country": "us",
+    "city": "Salem, OR, us",
+    "loc": {
+        "lat": "44.9391565",
+        "lng": "-123.033121"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/cherry-city-roller-derby/"
+},
+{
+    "name": "Chippewa Valley Roller Derby",
+    "country": "us",
+    "city": "Eau Claire, WI, us",
+    "loc": {
+        "lat": "44.811349",
+        "lng": "-91.4984941"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/chippewa-valley-roller-derby/"
+},
+{
+    "name": "Cincinnati Rollergirls",
+    "country": "us",
+    "city": "Cincinnati, OH, us",
+    "loc": {
+        "lat": "39.1014537",
+        "lng": "-84.5124602"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/cincinnati-rollergirls/"
+},
+{
+    "name": "Circle City Roller Derby",
+    "country": "us",
+    "city": "Indianapolis, IN, us",
+    "loc": {
+        "lat": "39.7683331",
+        "lng": "-86.1583502"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/circle-city-roller-derby/"
+},
+{
+    "name": "Classic City Roller Derby",
+    "country": "us",
+    "city": "Athens, GA, us",
+    "loc": {
+        "lat": "33.9597677",
+        "lng": "-83.376398"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/classic-city-roller-derby/"
+},
+{
+    "name": "Golden City Rollers",
+    "country": "za",
+    "city": "Johannesburg, za",
+    "loc": {
+        "lat": "-26.205",
+        "lng": "28.049722"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/golden-city-rollers/"
+},
+{
+    "name": "Cologne Roller Derby",
+    "country": "de",
+    "city": "Cologne, de",
+    "loc": {
+        "lat": "50.938361",
+        "lng": "6.959974"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/cologne-roller-derby/"
+},
+{
+    "name": "Columbia Roller Derby",
+    "country": "us",
+    "city": "Columbia, SC, us",
+    "loc": {
+        "lat": "34.0003117",
+        "lng": "-81.0331309"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/columbia-roller-derby/"
+},
+{
+    "name": "CoMo Roller Derby",
+    "country": "us",
+    "city": "Columbia/Jefferson City, MO, us",
+    "loc": {
+        "lat": "38.951883",
+        "lng": "-92.3337366"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/como-roller-derby/"
+},
+{
+    "name": "Confluence Crush Roller Derby",
+    "country": "us",
+    "city": "Metro East, IL, us",
+    "loc": {
+        "lat": "42.2645997",
+        "lng": "-89.036292"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/confluence-crush-roller-derby/"
+},
+{
+    "name": "Connecticut Roller Derby",
+    "country": "us",
+    "city": "Waterbury, CT, us",
+    "loc": {
+        "lat": "41.5538091",
+        "lng": "-73.0438362"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/connecticut-roller-derby/"
+},
+{
+    "name": "Convict City Rollers",
+    "country": "au",
+    "city": "Hobart, TAS, au",
+    "loc": {
+        "lat": "-42.8825088",
+        "lng": "147.3281233"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/convict-city-rollers/"
+},
+{
+    "name": "Copenhagen Roller Derby",
+    "country": "dk",
+    "city": "Copenhagen, dk",
+    "loc": {
+        "lat": "55.6867243",
+        "lng": "12.5700724"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/copenhagen-roller-derby/"
+},
+{
+    "name": "Cornfed Roller Derby",
+    "country": "us",
+    "city": "Muncie, IN, us",
+    "loc": {
+        "lat": "40.1936892",
+        "lng": "-85.3865271"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/cornfed-roller-derby/"
+},
+{
+    "name": "Crime City Rollers",
+    "country": "se",
+    "city": "Malmö, se",
+    "loc": {
+        "lat": "55.6052931",
+        "lng": "13.0001566"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/crime-city-rollers/"
+},
+{
+    "name": "Dark River Derby Coalition",
+    "country": "us",
+    "city": "Quincy, IL, us",
+    "loc": {
+        "lat": "39.9356016",
+        "lng": "-91.4098727"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/dark-river-derby-coalition/"
+},
+{
+    "name": "DC Rollergirls",
+    "country": "us",
+    "city": "Washington, DC, us",
+    "loc": {
+        "lat": "38.8950368",
+        "lng": "-77.0365427"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/dc-rollergirls/"
+},
+{
+    "name": "Demolition City Roller Derby",
+    "country": "us",
+    "city": "Evansville, IN, us",
+    "loc": {
+        "lat": "37.970495",
+        "lng": "-87.5715641"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/demolition-city-roller-derby/"
+},
+{
+    "name": "Denver Roller Derby",
+    "country": "us",
+    "city": "Denver, CO, us",
+    "loc": {
+        "lat": "39.775168",
+        "lng": "-105.024387"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/denver-roller-derby/"
+},
+{
+    "name": "Louisville Roller Derby",
+    "country": "us",
+    "city": "Louisville, KY, us",
+    "loc": {
+        "lat": "38.2542376",
+        "lng": "-85.759407"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/louisville-roller-derby/"
+},
+{
+    "name": "Detroit Roller Derby",
+    "country": "us",
+    "city": "Detroit, MI, us",
+    "loc": {
+        "lat": "42.3315509",
+        "lng": "-83.0466403"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/detroit-roller-derby/"
+},
+{
+    "name": "Diamond State Roller Derby",
+    "country": "us",
+    "city": "Wilmington, DE, us",
+    "loc": {
+        "lat": "39.7459468",
+        "lng": "-75.546589"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/diamond-state-roller-derby/"
+},
+{
+    "name": "Dirty River Roller Derby",
+    "country": "fi",
+    "city": "Turku, fi",
+    "loc": {
+        "lat": "60.4517531",
+        "lng": "22.2670522"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/dirty-river-roller-derby/"
+},
+{
+    "name": "Rocket City Roller Derby",
+    "country": "us",
+    "city": "Huntsville, AL, us",
+    "loc": {
+        "lat": "33.55872338360131",
+        "lng": "-86.80237471744451"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/rocket-city-roller-derby/"
+},
+{
+    "name": "Dock City Rollers",
+    "country": "se",
+    "city": "Gothenburg, se",
+    "loc": {
+        "lat": "57.7072326",
+        "lng": "11.9670171"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/dock-city-rollers/"
+},
+{
+    "name": "Dockyard Roller Derby",
+    "country": "us",
+    "city": "Tacoma, WA, us",
+    "loc": {
+        "lat": "47.2455013",
+        "lng": "-122.438329"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/dockyard-roller-derby/"
+},
+{
+    "name": "Dolly Rockit Rollers",
+    "country": "gb",
+    "city": "Leicestershire, England, gb",
+    "loc": {
+        "lat": "52.666667",
+        "lng": "-1.0"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/dolly-rockit-rollers/"
+},
+{
+    "name": "Dominion Derby Girls",
+    "country": "us",
+    "city": "Virginia Beach, VA, us",
+    "loc": {
+        "lat": "36.8496579",
+        "lng": "-75.9760751"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/dominion-derby-girls/"
+},
+{
+    "name": "Downriver Roller Dolls",
+    "country": "us",
+    "city": "Woodhaven, MI, us",
+    "loc": {
+        "lat": "42.1370519",
+        "lng": "-83.2451066"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/downriver-roller-dolls/"
+},
+{
+    "name": "Roller Derby Dresden",
+    "country": "de",
+    "city": "Dresden, de",
+    "loc": {
+        "lat": "51.0493286",
+        "lng": "13.7381437"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/roller-derby-dresden/"
+},
+{
+    "name": "Dublin Roller Derby",
+    "country": "ie",
+    "city": "Dublin, ie",
+    "loc": {
+        "lat": "53.3493795",
+        "lng": "-6.2605593"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/dublin-roller-derby/"
+},
+{
+    "name": "Elevated Roller Derby",
+    "country": "us",
+    "city": "Albuquerque, NM, us",
+    "loc": {
+        "lat": "35.082651",
+        "lng": "-106.62791488866495"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/elevated-roller-derby/"
+},
+{
+    "name": "Durango Roller Girls",
+    "country": "us",
+    "city": "Durango, CO, us",
+    "loc": {
+        "lat": "37.2769484",
+        "lng": "-107.8766"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/durango-roller-girls/"
+},
+{
+    "name": "Dutchland Derby Rollers",
+    "country": "us",
+    "city": "Lancaster, PA, us",
+    "loc": {
+        "lat": "40.03813",
+        "lng": "-76.3056686"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/dutchland-derby-rollers/"
+},
+{
+    "name": "Erie Roller Derby",
+    "country": "us",
+    "city": "Erie, PA, us",
+    "loc": {
+        "lat": "42.1294712",
+        "lng": "-80.0852695"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/erie-roller-derby/"
+},
+{
+    "name": "Eindhoven Rockcity Rollers",
+    "country": "nl",
+    "city": "Eindhoven, nl",
+    "loc": {
+        "lat": "51.4392648",
+        "lng": "5.478633"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/eindhoven-rockcity-rollers/"
+},
+{
+    "name": "El Paso Roller Derby",
+    "country": "us",
+    "city": "El Paso, TX, us",
+    "loc": {
+        "lat": "31.7601164",
+        "lng": "-106.4870404"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/el-paso-roller-derby/"
+},
+{
+    "name": "Fairbanks Roller Derby",
+    "country": "us",
+    "city": "Fairbanks, AK, us",
+    "loc": {
+        "lat": "64.837845",
+        "lng": "-147.716675"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/fairbanks-roller-derby/"
+},
+{
+    "name": "Fargo Moorhead Derby Girls",
+    "country": "us",
+    "city": "Fargo, ND, us",
+    "loc": {
+        "lat": "46.877229",
+        "lng": "-96.789821"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/fargo-moorhead-derby-girls/"
+},
+{
+    "name": "580 Rollergirls",
+    "country": "us",
+    "city": "Lawton, OK, us",
+    "loc": {
+        "lat": "34.6086854",
+        "lng": "-98.3903305"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/580-rollergirls/"
+},
+{
+    "name": "Fredericksburg Roller Derby",
+    "country": "us",
+    "city": "Fredericksburg, VA, us",
+    "loc": {
+        "lat": "38.3031837",
+        "lng": "-77.4605399"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/fredericksburg-roller-derby/"
+},
+{
+    "name": "FoCo Roller Derby",
+    "country": "us",
+    "city": "Fort Collins, CO, us",
+    "loc": {
+        "lat": "40.5871782",
+        "lng": "-105.0770113"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/foco-roller-derby/"
+},
+{
+    "name": "Fog City Rollers",
+    "country": "ca",
+    "city": "Saint John, NB, ca",
+    "loc": {
+        "lat": "45.2787992",
+        "lng": "-66.0585188"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/fog-city-rollers/"
+},
+{
+    "name": "Fort Myers Roller Derby",
+    "country": "us",
+    "city": "Fort Myers, FL, us",
+    "loc": {
+        "lat": "26.6556327",
+        "lng": "-81.8014096"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/fort-myers-roller-derby/"
+},
+{
+    "name": "Fox Cities Roller Derby",
+    "country": "us",
+    "city": "Appleton, WI, us",
+    "loc": {
+        "lat": "44.2613967",
+        "lng": "-88.4069744"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/fox-cities-roller-derby/"
+},
+{
+    "name": "Fort Wayne Roller Derby",
+    "country": "us",
+    "city": "Fort Wayne, IN, us",
+    "loc": {
+        "lat": "41.0799898",
+        "lng": "-85.1386015"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/fort-wayne-roller-derby/"
+},
+{
+    "name": "Gainesville Roller Rebels",
+    "country": "us",
+    "city": "Gainesville, FL, us",
+    "loc": {
+        "lat": "29.67357765",
+        "lng": "-82.32337460192167"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/gainesville-roller-rebels/"
+},
+{
+    "name": "Team Montana Roller Derby",
+    "country": "us",
+    "city": "Bozeman, MT, us",
+    "loc": {
+        "lat": "45.6794293",
+        "lng": "-111.044047"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/team-montana-roller-derby/"
+},
+{
+    "name": "Garden State Roller Derby",
+    "country": "us",
+    "city": "North Arlington, NJ, us",
+    "loc": {
+        "lat": "40.788434",
+        "lng": "-74.1331988"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/garden-state-roller-derby/"
+},
+{
+    "name": "Gem City Roller Derby",
+    "country": "us",
+    "city": "Dayton, OH, us",
+    "loc": {
+        "lat": "39.7589478",
+        "lng": "-84.1916069"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/gem-city-roller-derby/"
+},
+{
+    "name": "Glasgow Roller Derby",
+    "country": "gb",
+    "city": "Glasgow, Scotland, gb",
+    "loc": {
+        "lat": "55.861155",
+        "lng": "-4.2501687"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/glasgow-roller-derby/"
+},
+{
+    "name": "Glass City Rollers",
+    "country": "us",
+    "city": "Toledo, OH, us",
+    "loc": {
+        "lat": "41.6529143",
+        "lng": "-83.5378173"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/glass-city-rollers/"
+},
+{
+    "name": "Gold Coast Derby Grrls",
+    "country": "us",
+    "city": "Fort Lauderdale, FL, us",
+    "loc": {
+        "lat": "26.1223084",
+        "lng": "-80.1433786"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/gold-coast-derby-grrls/"
+},
+{
+    "name": "Gotham Roller Derby",
+    "country": "us",
+    "city": "New York, NY, us",
+    "loc": {
+        "lat": "40.7127281",
+        "lng": "-74.0060152"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/gotham-roller-derby/"
+},
+{
+    "name": "Gothenburg Roller Derby",
+    "country": "se",
+    "city": "Gothenburg, se",
+    "loc": {
+        "lat": "57.7072326",
+        "lng": "11.9670171"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/gothenburg-roller-derby/"
+},
+{
+    "name": "Grand Raggidy Roller Derby",
+    "country": "us",
+    "city": "Grand Rapids, MI, us",
+    "loc": {
+        "lat": "42.9632425",
+        "lng": "-85.6678639"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/grand-raggidy-roller-derby/"
+},
+{
+    "name": "Granite State Roller Derby",
+    "country": "us",
+    "city": "Concord, NH, us",
+    "loc": {
+        "lat": "43.207178",
+        "lng": "-71.537476"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/granite-state-roller-derby/"
+},
+{
+    "name": "Gray City Rebels",
+    "country": "br",
+    "city": "Sao Paolo, br",
+    "loc": {
+        "lat": "-22.0702705",
+        "lng": "-48.4333875"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/gray-city-rebels/"
+},
+{
+    "name": "Green Mountain Roller Derby",
+    "country": "us",
+    "city": "Essex Junction, VT, us",
+    "loc": {
+        "lat": "44.4906817",
+        "lng": "-73.11136"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/green-mountain-roller-derby/"
+},
+{
+    "name": "Greensboro Roller Derby",
+    "country": "us",
+    "city": "Greensboro, NC, us",
+    "loc": {
+        "lat": "36.0726355",
+        "lng": "-79.7919754"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/greensboro-roller-derby/"
+},
+{
+    "name": "Greenville Roller Derby",
+    "country": "us",
+    "city": "Greenville, SC, us",
+    "loc": {
+        "lat": "34.851354",
+        "lng": "-82.3984882"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/greenville-roller-derby/"
+},
+{
+    "name": "Hogtown Roller Derby",
+    "country": "ca",
+    "city": "Toronto, ON, ca",
+    "loc": {
+        "lat": "43.6534817",
+        "lng": "-79.3839347"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/hogtown-roller-derby/"
+},
+{
+    "name": "Hammer City Roller Derby",
+    "country": "ca",
+    "city": "Hamilton, ON, ca",
+    "loc": {
+        "lat": "43.2560802",
+        "lng": "-79.8728583"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/hammer-city-roller-derby/"
+},
+{
+    "name": "Happy Valley Derby Darlins",
+    "country": "us",
+    "city": "Utah County, UT, us",
+    "loc": {
+        "lat": "40.177058",
+        "lng": "-111.69107185434031"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/happy-valley-derby-darlins/"
+},
+{
+    "name": "Harbor City Roller Derby",
+    "country": "us",
+    "city": "Duluth, MN, us",
+    "loc": {
+        "lat": "46.7729322",
+        "lng": "-92.1251218"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/harbor-city-roller-derby/"
+},
+{
+    "name": "Hard Knox Roller Derby",
+    "country": "us",
+    "city": "Knoxville, TN, us",
+    "loc": {
+        "lat": "35.9603948",
+        "lng": "-83.9210261"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/hard-knox-roller-derby/"
+},
+{
+    "name": "Harpies Roller Derby Milano",
+    "country": "it",
+    "city": "Milan, it",
+    "loc": {
+        "lat": "45.4641943",
+        "lng": "9.1896346"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/harpies-roller-derby-milano/"
+},
+{
+    "name": "Harrisburg Area Roller Derby",
+    "country": "us",
+    "city": "Enola, PA, us",
+    "loc": {
+        "lat": "40.2853013",
+        "lng": "-76.93584633801541"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/harrisburg-area-roller-derby/"
+},
+{
+    "name": "Hartford Area Roller Derby",
+    "country": "us",
+    "city": "Manchester, CT, us",
+    "loc": {
+        "lat": "41.7834017",
+        "lng": "-72.5231973"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/hartford-area-roller-derby/"
+},
+{
+    "name": "Hellions of Troy Roller Derby",
+    "country": "us",
+    "city": "Saratoga Springs, NY, us",
+    "loc": {
+        "lat": "43.0821793",
+        "lng": "-73.7853915"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/hellions-of-troy-roller-derby/"
+},
+{
+    "name": "Ladies of HellTown",
+    "country": "br",
+    "city": "Sao Paulo, SP, br",
+    "loc": {
+        "lat": "-23.5506507",
+        "lng": "-46.6333824"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/ladies-of-helltown/"
+},
+{
+    "name": "Helsinki Roller Derby",
+    "country": "fi",
+    "city": "Helsinki, fi",
+    "loc": {
+        "lat": "60.1674881",
+        "lng": "24.9427473"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/helsinki-roller-derby/"
+},
+{
+    "name": "Hudson Valley Horrors Roller Derby",
+    "country": "us",
+    "city": "Kingston, NY, us",
+    "loc": {
+        "lat": "41.9287812",
+        "lng": "-74.0023702"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/hudson-valley-horrors-roller-derby/"
+},
+{
+    "name": "Hulls Angels Roller Derby",
+    "country": "gb",
+    "city": "Hull, England, gb",
+    "loc": {
+        "lat": "53.76238625",
+        "lng": "-0.3301213755327681"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/hulls-angels-roller-derby/"
+},
+{
+    "name": "Humboldt Roller Derby",
+    "country": "us",
+    "city": "Eureka, CA, us",
+    "loc": {
+        "lat": "40.7906871",
+        "lng": "-124.1673746"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/humboldt-roller-derby/"
+},
+{
+    "name": "Wicked City Roller Derby",
+    "country": "us",
+    "city": "Wichita, KS, us",
+    "loc": {
+        "lat": "37.6922361",
+        "lng": "-97.3375448"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/wicked-city-roller-derby/"
+},
+{
+    "name": "Ithaca League of Women Rollers",
+    "country": "us",
+    "city": "Ithaca, NY, us",
+    "loc": {
+        "lat": "42.437417499999995",
+        "lng": "-76.54837235139263"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/ithaca-league-of-women-rollers/"
+},
+{
+    "name": "Jackson Hole Juggernauts",
+    "country": "us",
+    "city": "Jackson, WY, us",
+    "loc": {
+        "lat": "43.479965",
+        "lng": "-110.761815"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/jackson-hole-juggernauts/"
+},
+{
+    "name": "Jacksonville Roller Derby",
+    "country": "us",
+    "city": "Jacksonville, FL, us",
+    "loc": {
+        "lat": "30.3321838",
+        "lng": "-81.655651"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/jacksonville-roller-derby/"
+},
+{
+    "name": "Jersey Shore Roller Derby",
+    "country": "us",
+    "city": "Toms River, NJ, us",
+    "loc": {
+        "lat": "39.9526791",
+        "lng": "-74.1968257"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/jersey-shore-roller-derby/"
+},
+{
+    "name": "Jet City Roller Derby",
+    "country": "us",
+    "city": "Everett, WA, us",
+    "loc": {
+        "lat": "47.9793437",
+        "lng": "-122.2127011"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/jet-city-roller-derby/"
+},
+{
+    "name": "Junction City Roller Derby",
+    "country": "us",
+    "city": "Ogden, UT, us",
+    "loc": {
+        "lat": "41.2230048",
+        "lng": "-111.9738429"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/junction-city-roller-derby/"
+},
+{
+    "name": "Kallio Rolling Rainbow",
+    "country": "fi",
+    "city": "Helsinki, fi",
+    "loc": {
+        "lat": "60.1674881",
+        "lng": "24.9427473"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/kallio-rolling-rainbow/"
+},
+{
+    "name": "Kansas City Roller Warriors",
+    "country": "us",
+    "city": "Kansas City, MO, us",
+    "loc": {
+        "lat": "39.100105",
+        "lng": "-94.5781416"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/kansas-city-roller-warriors/"
+},
+{
+    "name": "West Coast Derby Knockouts",
+    "country": "us",
+    "city": "Ventura, CA, us",
+    "loc": {
+        "lat": "34.2768173",
+        "lng": "-119.299657"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/west-coast-derby-knockouts/"
+},
+{
+    "name": "Lafayette Roller Derby",
+    "country": "us",
+    "city": "Lafayette, IN, us",
+    "loc": {
+        "lat": "40.4191229",
+        "lng": "-86.8919011"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/lafayette-roller-derby/"
+},
+{
+    "name": "Lava City Roller Derby",
+    "country": "us",
+    "city": "Bend, OR, us",
+    "loc": {
+        "lat": "44.0581728",
+        "lng": "-121.3153096"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/lava-city-roller-derby/"
+},
+{
+    "name": "Leeds Roller Derby",
+    "country": "gb",
+    "city": "Leeds, England, gb",
+    "loc": {
+        "lat": "53.7974185",
+        "lng": "-1.5437941"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/leeds-roller-derby/"
+},
+{
+    "name": "Lehigh Valley Roller Derby",
+    "country": "us",
+    "city": "Bethlehem, PA, us",
+    "loc": {
+        "lat": "40.6178915",
+        "lng": "-75.3786521"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/lehigh-valley-roller-derby/"
+},
+{
+    "name": "Les Quads de Paris",
+    "country": "fr",
+    "city": "Paris, fr",
+    "loc": {
+        "lat": "48.8534951",
+        "lng": "2.3483915"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/les-quads-de-paris/"
+},
+{
+    "name": "Lilac City Roller Derby",
+    "country": "us",
+    "city": "Spokane, WA, us",
+    "loc": {
+        "lat": "47.6571934",
+        "lng": "-117.42351"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/lilac-city-roller-derby/"
+},
+{
+    "name": "Lomme Roller Derby",
+    "country": "fr",
+    "city": "Lomme, fr",
+    "loc": {
+        "lat": "50.6457022",
+        "lng": "2.9870927"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/lomme-roller-derby/"
+},
+{
+    "name": "Little City Roller Derby",
+    "country": "us",
+    "city": "Johnson City, TN, us",
+    "loc": {
+        "lat": "36.3134398",
+        "lng": "-82.3534728"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/little-city-roller-derby/"
+},
+{
+    "name": "Youngstown Area Roller Derby",
+    "country": "us",
+    "city": "Youngstown, OH, us",
+    "loc": {
+        "lat": "41.1035786",
+        "lng": "-80.6520161"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/youngstown-area-roller-derby/"
+},
+{
+    "name": "London Roller Derby",
+    "country": "gb",
+    "city": "London, England, gb",
+    "loc": {
+        "lat": "51.5074456",
+        "lng": "-0.1277653"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/london-roller-derby/"
+},
+{
+    "name": "London Rockin’ Rollers",
+    "country": "gb",
+    "city": "London, England, gb",
+    "loc": {
+        "lat": "51.5074456",
+        "lng": "-0.1277653"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/london-rockin-rollers/"
+},
+{
+    "name": "Long Island Roller Rebels",
+    "country": "us",
+    "city": "Massapequa, NY, us",
+    "loc": {
+        "lat": "40.6761472",
+        "lng": "-73.4696557"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/long-island-roller-rebels/"
+},
+{
+    "name": "Lowcountry Highrollers",
+    "country": "us",
+    "city": "Charleston, SC, us",
+    "loc": {
+        "lat": "32.7884363",
+        "lng": "-79.9399309"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/lowcountry-highrollers/"
+},
+{
+    "name": "Lutèce Destroyeuses",
+    "country": "fr",
+    "city": "Paris, fr",
+    "loc": {
+        "lat": "48.8534951",
+        "lng": "2.3483915"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/lutece-destroyeuses/"
+},
+{
+    "name": "Madison Roller Derby",
+    "country": "us",
+    "city": "Madison, WI, us",
+    "loc": {
+        "lat": "43.074761",
+        "lng": "-89.3837613"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/madison-roller-derby/"
+},
+{
+    "name": "Roller Derby Madrid",
+    "country": "es",
+    "city": "Madrid, es",
+    "loc": {
+        "lat": "40.4167047",
+        "lng": "-3.7035825"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/roller-derby-madrid/"
+},
+{
+    "name": "Maine Roller Derby",
+    "country": "us",
+    "city": "Portland, ME, us",
+    "loc": {
+        "lat": "43.6634708",
+        "lng": "-70.25849073056867"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/maine-roller-derby/"
+},
+{
+    "name": "Greater Vancouver Roller Derby",
+    "country": "ca",
+    "city": "Vancouver, BC, ca",
+    "loc": {
+        "lat": "49.2608724",
+        "lng": "-123.113952"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/greater-vancouver-roller-derby/"
+},
+{
+    "name": "Peach State Roller Derby",
+    "country": "us",
+    "city": "Marietta, GA, us",
+    "loc": {
+        "lat": "33.9528472",
+        "lng": "-84.5496148"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/peach-state-roller-derby/"
+},
+{
+    "name": "Mass Attack Roller Derby",
+    "country": "us",
+    "city": "Fairhaven, MA, us",
+    "loc": {
+        "lat": "41.6376043",
+        "lng": "-70.9036487"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/mass-attack-roller-derby/"
+},
+{
+    "name": "MedCity Mafia Roller Derby",
+    "country": "us",
+    "city": "Rochester, MN, us",
+    "loc": {
+        "lat": "44.0234387",
+        "lng": "-92.4630182"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/medcity-mafia-roller-derby/"
+},
+{
+    "name": "Memphis Roller Derby",
+    "country": "us",
+    "city": "Memphis, TN, us",
+    "loc": {
+        "lat": "35.1460249",
+        "lng": "-90.0517638"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/memphis-roller-derby/"
+},
+{
+    "name": "Middlesbrough Roller Derby",
+    "country": "gb",
+    "city": "Middlesbrough, England, gb",
+    "loc": {
+        "lat": "54.5760419",
+        "lng": "-1.2344047"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/middlesbrough-roller-derby/"
+},
+{
+    "name": "Mid-State Roller Derby",
+    "country": "us",
+    "city": "Stevens Point, WI, us",
+    "loc": {
+        "lat": "44.5234467",
+        "lng": "-89.5844457"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/mid-state-roller-derby/"
+},
+{
+    "name": "Minnesota Roller Derby",
+    "country": "us",
+    "city": "Saint Paul, MN, us",
+    "loc": {
+        "lat": "44.9497487",
+        "lng": "-93.0931028"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/minnesota-roller-derby/"
+},
+{
+    "name": "Mission City Roller Derby",
+    "country": "us",
+    "city": "Santa Barbara, CA, us",
+    "loc": {
+        "lat": "34.4137335",
+        "lng": "-119.692899"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/mission-city-roller-derby/"
+},
+{
+    "name": "Mississippi Valley Mayhem",
+    "country": "us",
+    "city": "La Crosse, WI, us",
+    "loc": {
+        "lat": "43.8122836",
+        "lng": "-91.2514355"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/mississippi-valley-mayhem/"
+},
+{
+    "name": "Monterey Bay Roller Derby",
+    "country": "us",
+    "city": "Monterey, CA, us",
+    "loc": {
+        "lat": "36.2231079",
+        "lng": "-121.387742"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/monterey-bay-roller-derby/"
+},
+{
+    "name": "Montréal Roller Derby",
+    "country": "ca",
+    "city": "Montréal, QC, ca",
+    "loc": {
+        "lat": "45.5031824",
+        "lng": "-73.5698065"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/montreal-roller-derby/"
+},
+{
+    "name": "Morgantown Roller Derby",
+    "country": "us",
+    "city": "Morgantown, WV, us",
+    "loc": {
+        "lat": "39.6296809",
+        "lng": "-79.9559437"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/morgantown-roller-derby/"
+},
+{
+    "name": "Muddy River Rollers",
+    "country": "ca",
+    "city": "Moncton, NB, ca",
+    "loc": {
+        "lat": "46.0985679",
+        "lng": "-64.8004265"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/muddy-river-rollers/"
+},
+{
+    "name": "Munich Rolling Rebels",
+    "country": "de",
+    "city": "Munich, de",
+    "loc": {
+        "lat": "48.1371079",
+        "lng": "11.5753822"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/munich-rolling-rebels/"
+},
+{
+    "name": "Muscogee Roller Girls",
+    "country": "us",
+    "city": "Columbus, GA, us",
+    "loc": {
+        "lat": "32.4610708",
+        "lng": "-84.9880449"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/muscogee-roller-girls/"
+},
+{
+    "name": "Nantes Roller Derby",
+    "country": "fr",
+    "city": "Nantes, fr",
+    "loc": {
+        "lat": "47.2186371",
+        "lng": "-1.5541362"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/nantes-roller-derby/"
+},
+{
+    "name": "Naptown Roller Derby",
+    "country": "us",
+    "city": "Indianapolis, IN, us",
+    "loc": {
+        "lat": "39.7683331",
+        "lng": "-86.1583502"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/naptown-roller-derby/"
+},
+{
+    "name": "Nashville Roller Derby",
+    "country": "us",
+    "city": "Nashville, TN, us",
+    "loc": {
+        "lat": "36.1622767",
+        "lng": "-86.7742984"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/nashville-roller-derby/"
+},
+{
+    "name": "Naughty Pines Roller Derby",
+    "country": "us",
+    "city": "Laramie, WY, us",
+    "loc": {
+        "lat": "41.3116442",
+        "lng": "-105.5917876"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/naughty-pines-roller-derby/"
+},
+{
+    "name": "Northern Brisbane Rollers",
+    "country": "au",
+    "city": "Brisbane, QLD, au",
+    "loc": {
+        "lat": "-27.4689682",
+        "lng": "153.0234991"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/northern-brisbane-rollers/"
+},
+{
+    "name": "Akron Roller Derby",
+    "country": "us",
+    "city": "Akron, OH, us",
+    "loc": {
+        "lat": "41.083064",
+        "lng": "-81.518485"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/akron-roller-derby/"
+},
+{
+    "name": "Newcastle Roller Derby",
+    "country": "gb",
+    "city": "Newcastle Upon Tyne, England, gb",
+    "loc": {
+        "lat": "54.9738474",
+        "lng": "-1.6131572"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/newcastle-roller-derby/"
+},
+{
+    "name": "New Hampshire Roller Derby",
+    "country": "us",
+    "city": "Manchester, NH, us",
+    "loc": {
+        "lat": "42.9956397",
+        "lng": "-71.4547891"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/new-hampshire-roller-derby/"
+},
+{
+    "name": "Nidaros Roller Derby",
+    "country": "no",
+    "city": "Trondheim, no",
+    "loc": {
+        "lat": "63.4304475",
+        "lng": "10.3952118"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/nidaros-roller-derby/"
+},
+{
+    "name": "No Coast Roller Derby",
+    "country": "us",
+    "city": "Lincoln, NE, us",
+    "loc": {
+        "lat": "40.8088861",
+        "lng": "-96.7077751"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/no-coast-roller-derby/"
+},
+{
+    "name": "North Star Roller Derby",
+    "country": "us",
+    "city": "Minneapolis, MN, us",
+    "loc": {
+        "lat": "44.9772995",
+        "lng": "-93.2654692"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/north-star-roller-derby/"
+},
+{
+    "name": "North Texas Roller Derby",
+    "country": "us",
+    "city": "Denton, TX, us",
+    "loc": {
+        "lat": "33.1838787",
+        "lng": "-97.1413417"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/north-texas-roller-derby/"
+},
+{
+    "name": "Natural State Roller Derby",
+    "country": "us",
+    "city": "Fayetteville, AR, us",
+    "loc": {
+        "lat": "36.0625843",
+        "lng": "-94.1574328"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/natural-state-roller-derby/"
+},
+{
+    "name": "Twin Valleys Roller Derby",
+    "country": "us",
+    "city": "Christiansburg, VA, us",
+    "loc": {
+        "lat": "37.1298517",
+        "lng": "-80.4089389"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/twin-valleys-roller-derby/"
+},
+{
+    "name": "West Sound Roller Derby",
+    "country": "us",
+    "city": "Bremerton, WA, us",
+    "loc": {
+        "lat": "47.5653663",
+        "lng": "-122.6246836"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/west-sound-roller-derby/"
+},
+{
+    "name": "Ohio Roller Derby",
+    "country": "us",
+    "city": "Columbus, OH, us",
+    "loc": {
+        "lat": "39.9622601",
+        "lng": "-83.0007065"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/ohio-roller-derby/"
+},
+{
+    "name": "Ohio Valley Roller Derby",
+    "country": "us",
+    "city": "Martins Ferry, OH, us",
+    "loc": {
+        "lat": "40.0959055",
+        "lng": "-80.724526"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/ohio-valley-roller-derby/"
+},
+{
+    "name": "Old Capitol City Roller Derby",
+    "country": "us",
+    "city": "Iowa City, IA, us",
+    "loc": {
+        "lat": "41.6612561",
+        "lng": "-91.5299106"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/old-capitol-city-roller-derby/"
+},
+{
+    "name": "Omaha Roller Derby",
+    "country": "us",
+    "city": "Omaha, NE, us",
+    "loc": {
+        "lat": "41.2587459",
+        "lng": "-95.9383758"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/omaha-roller-derby/"
+},
+{
+    "name": "Antwerp Roller Derby",
+    "country": "be",
+    "city": "Antwerp, be",
+    "loc": {
+        "lat": "51.2211097",
+        "lng": "4.3997081"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/antwerp-roller-derby/"
+},
+{
+    "name": "Oslo Roller Derby",
+    "country": "no",
+    "city": "Oslo, no",
+    "loc": {
+        "lat": "59.9133301",
+        "lng": "10.7389701"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/oslo-roller-derby/"
+},
+{
+    "name": "Pacific Roller Derby",
+    "country": "us",
+    "city": "Honolulu, HI, us",
+    "loc": {
+        "lat": "21.304547",
+        "lng": "-157.855676"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/pacific-roller-derby/"
+},
+{
+    "name": "Paris Roller Derby",
+    "country": "fr",
+    "city": "Paris, fr",
+    "loc": {
+        "lat": "48.8534951",
+        "lng": "2.3483915"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/paris-roller-derby/"
+},
+{
+    "name": "Peninsula Roller Derby",
+    "country": "us",
+    "city": "Burlingame, CA, us",
+    "loc": {
+        "lat": "37.5780965",
+        "lng": "-122.3473099"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/peninsula-roller-derby/"
+},
+{
+    "name": "West Florida Roller Derby",
+    "country": "us",
+    "city": "Pensacola, FL, us",
+    "loc": {
+        "lat": "30.421309",
+        "lng": "-87.2169149"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/west-florida-roller-derby/"
+},
+{
+    "name": "Perth Roller Derby",
+    "country": "au",
+    "city": "Perth, au",
+    "loc": {
+        "lat": "-31.9558933",
+        "lng": "115.8605855"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/perth-roller-derby/"
+},
+{
+    "name": "Philly Roller Derby",
+    "country": "us",
+    "city": "Philadelphia, PA, us",
+    "loc": {
+        "lat": "39.9527237",
+        "lng": "-75.1635262"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/philly-roller-derby/"
+},
+{
+    "name": "Pikes Peak Roller Derby",
+    "country": "us",
+    "city": "Colorado Springs, CO, us",
+    "loc": {
+        "lat": "38.8339578",
+        "lng": "-104.825348"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/pikes-peak-roller-derby/"
+},
+{
+    "name": "Pirate City Rollers",
+    "country": "nz",
+    "city": "Auckland, nz",
+    "loc": {
+        "lat": "-36.852095",
+        "lng": "174.7631803"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/pirate-city-rollers/"
+},
+{
+    "name": "Prairieland Punishers",
+    "country": "us",
+    "city": "Decatur, IL, us",
+    "loc": {
+        "lat": "39.8454163",
+        "lng": "-88.9524151"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/prairieland-punishers/"
+},
+{
+    "name": "Providence Roller Derby",
+    "country": "us",
+    "city": "Providence, RI, us",
+    "loc": {
+        "lat": "41.8239891",
+        "lng": "-71.4128343"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/providence-roller-derby/"
+},
+{
+    "name": "Quad City Rollers",
+    "country": "us",
+    "city": "Bettendorf, IA, us",
+    "loc": {
+        "lat": "41.5253792",
+        "lng": "-90.5098639"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/quad-city-rollers/"
+},
+{
+    "name": "Queen City Roller Derby",
+    "country": "us",
+    "city": "Buffalo, NY, us",
+    "loc": {
+        "lat": "42.8867166",
+        "lng": "-78.8783922"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/queen-city-roller-derby/"
+},
+{
+    "name": "Wilkes-Barre Scranton Roller Derby",
+    "country": "us",
+    "city": "Wilkes-Barre, PA, us",
+    "loc": {
+        "lat": "41.2464824",
+        "lng": "-75.8817316"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/wilkes-barre-scranton-roller-derby/"
+},
+{
+    "name": "Rage City Roller Derby",
+    "country": "us",
+    "city": "Anchorage, AK, us",
+    "loc": {
+        "lat": "61.2163129",
+        "lng": "-149.894852"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/rage-city-roller-derby/"
+},
+{
+    "name": "Rainy City Roller Derby",
+    "country": "gb",
+    "city": "Manchester, England, gb",
+    "loc": {
+        "lat": "53.4794892",
+        "lng": "-2.2451148"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/rainy-city-roller-derby/"
+},
+{
+    "name": "Rat City Roller Derby",
+    "country": "us",
+    "city": "Seattle, WA, us",
+    "loc": {
+        "lat": "47.6038321",
+        "lng": "-122.330062"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/rat-city-roller-derby/"
+},
+{
+    "name": "Roller Derby Quebec",
+    "country": "ca",
+    "city": "Quebec, QC, ca",
+    "loc": {
+        "lat": "46.8137431",
+        "lng": "-71.2084061"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/roller-derby-quebec/"
+},
+{
+    "name": "Red Stick Roller Derby",
+    "country": "us",
+    "city": "Baton Rouge, LA, us",
+    "loc": {
+        "lat": "28.29731286266064",
+        "lng": "-82.50227812280863"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/red-stick-roller-derby/"
+},
+{
+    "name": "Renegade Derby Dames",
+    "country": "ca",
+    "city": "Alliston, ON, ca",
+    "loc": {
+        "lat": "44.1539369",
+        "lng": "-79.8692321"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/renegade-derby-dames/"
+},
+{
+    "name": "Richland County Regulators Derby Team",
+    "country": "us",
+    "city": "Columbia, SC, us",
+    "loc": {
+        "lat": "34.0003117",
+        "lng": "-81.0331309"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/richland-county-regulators-derby-team/"
+},
+{
+    "name": "Richter City Roller Derby",
+    "country": "nz",
+    "city": "Wellington, nz",
+    "loc": {
+        "lat": "-41.2887953",
+        "lng": "174.7772114"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/richter-city-roller-derby/"
+},
+{
+    "name": "Ottawa Valley Roller Derby",
+    "country": "ca",
+    "city": "Ottawa, ON, ca",
+    "loc": {
+        "lat": "45.4208777",
+        "lng": "-75.6901106"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/ottawa-valley-roller-derby/"
+},
+{
+    "name": "River City Roller Derby",
+    "country": "us",
+    "city": "Richmond, VA, us",
+    "loc": {
+        "lat": "37.5578678",
+        "lng": "-77.46125149396735"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/river-city-roller-derby/"
+},
+{
+    "name": "Roc City Roller Derby",
+    "country": "us",
+    "city": "Rochester, NY, us",
+    "loc": {
+        "lat": "43.157285",
+        "lng": "-77.615214"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/roc-city-roller-derby/"
+},
+{
+    "name": "Roller Derby Karlsruhe",
+    "country": "de",
+    "city": "Karlsruhe, de",
+    "loc": {
+        "lat": "49.0068705",
+        "lng": "8.4034195"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/roller-derby-karlsruhe/"
+},
+{
+    "name": "Rock Coast Roller Derby",
+    "country": "us",
+    "city": "Rockland, ME, us",
+    "loc": {
+        "lat": "44.1048327",
+        "lng": "-69.1091823"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/rock-coast-roller-derby/"
+},
+{
+    "name": "Rockford Rage Roller Derby",
+    "country": "us",
+    "city": "Rockford, IL, us",
+    "loc": {
+        "lat": "42.2713945",
+        "lng": "-89.093966"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/rockford-rage-roller-derby/"
+},
+{
+    "name": "Rockin City Roller Derby",
+    "country": "us",
+    "city": "Round Rock, TX, us",
+    "loc": {
+        "lat": "30.5085915",
+        "lng": "-97.6788056"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/rockin-city-roller-derby/"
+},
+{
+    "name": "Rock n Roller Queens",
+    "country": "co",
+    "city": "Bogotá, D.C., co",
+    "loc": {
+        "lat": "4.6533816",
+        "lng": "-74.0836333"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/rock-n-roller-queens/"
+},
+{
+    "name": "Rocktown Rollers",
+    "country": "us",
+    "city": "Harrisonburg, VA, us",
+    "loc": {
+        "lat": "38.4493315",
+        "lng": "-78.8688833"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/rocktown-rollers/"
+},
+{
+    "name": "Rocky Mountain Roller Derby",
+    "country": "us",
+    "city": "Denver, CO, us",
+    "loc": {
+        "lat": "39.775168",
+        "lng": "-105.024387"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/rocky-mountain-roller-derby/"
+},
+{
+    "name": "Rodeo City Roller Derby",
+    "country": "us",
+    "city": "Ellensburg, WA, us",
+    "loc": {
+        "lat": "46.9970635",
+        "lng": "-120.545122"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/rodeo-city-roller-derby/"
+},
+{
+    "name": "Fayetteville Roller Derby",
+    "country": "us",
+    "city": "Fayetteville, NC, us",
+    "loc": {
+        "lat": "35.030047100000004",
+        "lng": "-78.93046939999999"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/fayetteville-roller-derby/"
+},
+{
+    "name": "Rose City Rollers",
+    "country": "us",
+    "city": "Portland, OR, us",
+    "loc": {
+        "lat": "45.5202471",
+        "lng": "-122.674194"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/rose-city-rollers/"
+},
+{
+    "name": "Roughneck Roller Derby",
+    "country": "us",
+    "city": "Tulsa, OK, us",
+    "loc": {
+        "lat": "36.1563122",
+        "lng": "-95.9927516"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/roughneck-roller-derby/"
+},
+{
+    "name": "Royal City Roller Derby",
+    "country": "ca",
+    "city": "Guelph, ON, ca",
+    "loc": {
+        "lat": "43.5460516",
+        "lng": "-80.2493276"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/royal-city-roller-derby/"
+},
+{
+    "name": "Ruhrpott Roller Derby",
+    "country": "de",
+    "city": "Essen, de",
+    "loc": {
+        "lat": "51.4582235",
+        "lng": "7.0158171"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/ruhrpott-roller-derby/"
+},
+{
+    "name": "Sacramento Roller Derby",
+    "country": "us",
+    "city": "Sacramento, CA, us",
+    "loc": {
+        "lat": "38.5810606",
+        "lng": "-121.493895"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/sacramento-roller-derby/"
+},
+{
+    "name": "Sailor City Rollers",
+    "country": "ar",
+    "city": "Buenos Aires, ar",
+    "loc": {
+        "lat": "-34.6083696",
+        "lng": "-58.4440583"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/sailor-city-rollers/"
+},
+{
+    "name": "San Fernando Valley Roller Derby",
+    "country": "us",
+    "city": "Van Nuys, CA, us",
+    "loc": {
+        "lat": "34.211163",
+        "lng": "-118.448446"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/san-fernando-valley-roller-derby/"
+},
+{
+    "name": "Santa Cruz Roller Derby",
+    "country": "us",
+    "city": "Santa Cruz, CA, us",
+    "loc": {
+        "lat": "37.050096",
+        "lng": "-121.99059"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/santa-cruz-roller-derby/"
+},
+{
+    "name": "Savannah Derby Devils",
+    "country": "us",
+    "city": "Savannah, GA, us",
+    "loc": {
+        "lat": "32.0790074",
+        "lng": "-81.0921335"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/savannah-derby-devils/"
+},
+{
+    "name": "Shasta Roller Derby",
+    "country": "us",
+    "city": "Redding, CA, us",
+    "loc": {
+        "lat": "40.5863563",
+        "lng": "-122.391675"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/shasta-roller-derby/"
+},
+{
+    "name": "Sheffield Steel Roller Derby",
+    "country": "gb",
+    "city": "Sheffield, England, gb",
+    "loc": {
+        "lat": "53.3806626",
+        "lng": "-1.4702278"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/sheffield-steel-roller-derby/"
+},
+{
+    "name": "Sick Town Roller Derby",
+    "country": "us",
+    "city": "Corvallis, OR, us",
+    "loc": {
+        "lat": "44.5645659",
+        "lng": "-123.2620435"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/sick-town-roller-derby/"
+},
+{
+    "name": "Silicon Valley Roller Derby",
+    "country": "us",
+    "city": "San Jose, CA, us",
+    "loc": {
+        "lat": "37.3361663",
+        "lng": "-121.890591"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/silicon-valley-roller-derby/"
+},
+{
+    "name": "Fabulous Sin City Roller Derby",
+    "country": "us",
+    "city": "Las Vegas, NV, us",
+    "loc": {
+        "lat": "36.1672559",
+        "lng": "-115.148516"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/fabulous-sin-city-roller-derby/"
+},
+{
+    "name": "Sioux Falls Roller Dollz",
+    "country": "us",
+    "city": "Sioux Falls, SD, us",
+    "loc": {
+        "lat": "43.5476008",
+        "lng": "-96.7293629"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/sioux-falls-roller-dollz/"
+},
+{
+    "name": "SoCal Derby",
+    "country": "us",
+    "city": "San Diego, CA, us",
+    "loc": {
+        "lat": "32.7166921",
+        "lng": "-117.169295"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/socal-derby/"
+},
+{
+    "name": "Sonoma County Roller Derby",
+    "country": "us",
+    "city": "Santa Rosa, CA, us",
+    "loc": {
+        "lat": "38.4404925",
+        "lng": "-122.7141049"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/sonoma-county-roller-derby/"
+},
+{
+    "name": "Soul City Sirens",
+    "country": "us",
+    "city": "Augusta, GA, us",
+    "loc": {
+        "lat": "33.4709714",
+        "lng": "-81.9748429"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/soul-city-sirens/"
+},
+{
+    "name": "South Bend Roller Derby",
+    "country": "us",
+    "city": "South Bend, IN, us",
+    "loc": {
+        "lat": "41.6689661",
+        "lng": "-86.2510517"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/south-bend-roller-derby/"
+},
+{
+    "name": "South Coast Roller Derby",
+    "country": "us",
+    "city": "San Clemente, CA, us",
+    "loc": {
+        "lat": "33.4270275",
+        "lng": "-117.6124179"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/south-coast-roller-derby/"
+},
+{
+    "name": "Southern Delaware Roller Derby",
+    "country": "us",
+    "city": "Sussex County, DE, us",
+    "loc": {
+        "lat": "38.6908097",
+        "lng": "-75.3691421"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/southern-delaware-roller-derby/"
+},
+{
+    "name": "Southern Illinois Roller Gremlins",
+    "country": "us",
+    "city": "Marion, IL, us",
+    "loc": {
+        "lat": "38.6477381",
+        "lng": "-88.9232112"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/southern-illinois-roller-gremlins/"
+},
+{
+    "name": "SO Derby",
+    "country": "us",
+    "city": "Medford, OR, us",
+    "loc": {
+        "lat": "42.3264181",
+        "lng": "-122.8718605"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/so-derby/"
+},
+{
+    "name": "South Sea Roller Derby",
+    "country": "au",
+    "city": "Parkdale, VIC, au",
+    "loc": {
+        "lat": "-37.9930593",
+        "lng": "145.0763034"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/south-sea-roller-derby/"
+},
+{
+    "name": "Springfield Roller Derby",
+    "country": "us",
+    "city": "Springfield, MO, us",
+    "loc": {
+        "lat": "37.2081729",
+        "lng": "-93.2922715"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/springfield-roller-derby/"
+},
+{
+    "name": "State College Area Roller Derby",
+    "country": "us",
+    "city": "State College, PA, us",
+    "loc": {
+        "lat": "40.7944504",
+        "lng": "-77.8616386"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/state-college-area-roller-derby/"
+},
+{
+    "name": "St. Chux Derby Crew",
+    "country": "us",
+    "city": "St. Charles, MO, us",
+    "loc": {
+        "lat": "38.7877791",
+        "lng": "-90.6747372"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/st-chux-derby-crew/"
+},
+{
+    "name": "Steel City Roller Derby",
+    "country": "us",
+    "city": "Pittsburgh, PA, us",
+    "loc": {
+        "lat": "40.4416941",
+        "lng": "-79.9900861"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/steel-city-roller-derby/"
+},
+{
+    "name": "Stockholm Roller Derby",
+    "country": "se",
+    "city": "Stockholm, se",
+    "loc": {
+        "lat": "59.3251172",
+        "lng": "18.0710935"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/stockholm-roller-derby/"
+},
+{
+    "name": "St. Pauli Roller Derby",
+    "country": "de",
+    "city": "Hamburg, de",
+    "loc": {
+        "lat": "53.550341",
+        "lng": "10.000654"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/st-pauli-roller-derby/"
+},
+{
+    "name": "Stuttgart Valley Roller Derby",
+    "country": "de",
+    "city": "Stuttgart, de",
+    "loc": {
+        "lat": "48.7784485",
+        "lng": "9.1800132"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/stuttgart-valley-roller-derby/"
+},
+{
+    "name": "Sun State Roller Derby",
+    "country": "au",
+    "city": "Browns Plains, QLD, au",
+    "loc": {
+        "lat": "-27.662885",
+        "lng": "153.05160550074805"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/sun-state-roller-derby/"
+},
+{
+    "name": "Sydney Roller Derby League",
+    "country": "au",
+    "city": "Sydney, NSW, au",
+    "loc": {
+        "lat": "-33.8698439",
+        "lng": "151.2082848"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/sydney-roller-derby-league/"
+},
+{
+    "name": "Tallahassee Roller Derby",
+    "country": "us",
+    "city": "Tallahassee, FL, us",
+    "loc": {
+        "lat": "30.4380832",
+        "lng": "-84.2809332"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/tallahassee-roller-derby/"
+},
+{
+    "name": "Tampa Roller Derby",
+    "country": "us",
+    "city": "Tampa, FL, us",
+    "loc": {
+        "lat": "27.9529744",
+        "lng": "-82.4508736"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/tampa-roller-derby/"
+},
+{
+    "name": "Tampere Roller Derby",
+    "country": "fi",
+    "city": "Tampere, fi",
+    "loc": {
+        "lat": "61.4980214",
+        "lng": "23.7603118"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/tampere-roller-derby/"
+},
+{
+    "name": "Des Moines Roller Derby",
+    "country": "us",
+    "city": "Des Moines, IA, us",
+    "loc": {
+        "lat": "41.5868654",
+        "lng": "-93.6249494"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/des-moines-roller-derby/"
+},
+{
+    "name": "Terminal City Roller Derby Association",
+    "country": "ca",
+    "city": "Vancouver, BC, ca",
+    "loc": {
+        "lat": "49.2608724",
+        "lng": "-123.113952"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/terminal-city-roller-derby-association/"
+},
+{
+    "name": "Texas Rollergirls",
+    "country": "us",
+    "city": "Austin, TX, us",
+    "loc": {
+        "lat": "30.2711286",
+        "lng": "-97.7436995"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/texas-rollergirls/"
+},
+{
+    "name": "Tiger Bay Brawlers",
+    "country": "wal",
+    "city": "Cardiff, wal",
+    "loc": {
+        "lat": "51.530434166512926",
+        "lng": "-3.2511376208497738"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/tiger-bay-brawlers/"
+},
+{
+    "name": "Toronto Roller Derby",
+    "country": "ca",
+    "city": "Toronto, ON, ca",
+    "loc": {
+        "lat": "43.6534817",
+        "lng": "-79.3839347"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/toronto-roller-derby/"
+},
+{
+    "name": "Tragic City Rollers",
+    "country": "us",
+    "city": "Birmingham, AL, us",
+    "loc": {
+        "lat": "33.57126545569171",
+        "lng": "-86.7657858352245"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/tragic-city-rollers/"
+},
+{
+    "name": "Treasure Valley Roller Derby",
+    "country": "us",
+    "city": "Boise, ID, us",
+    "loc": {
+        "lat": "43.6166163",
+        "lng": "-116.200886"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/treasure-valley-roller-derby/"
+},
+{
+    "name": "Tri-City Roller Derby",
+    "country": "ca",
+    "city": "Kitchener, ON, ca",
+    "loc": {
+        "lat": "43.451291",
+        "lng": "-80.4927815"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/tri-city-roller-derby/"
+},
+{
+    "name": "Tucson Roller Derby",
+    "country": "us",
+    "city": "Tucson, AZ, us",
+    "loc": {
+        "lat": "32.2228765",
+        "lng": "-110.974847"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/tucson-roller-derby/"
+},
+{
+    "name": "Twin City Derby Group",
+    "country": "us",
+    "city": "Champaign, IL, us",
+    "loc": {
+        "lat": "40.1164841",
+        "lng": "-88.2430932"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/twin-city-derby-group/"
+},
+{
+    "name": "2×4 Roller Derby",
+    "country": "ar",
+    "city": "Buenos Aires, ar",
+    "loc": {
+        "lat": "-34.6083696",
+        "lng": "-58.4440583"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/2x4-roller-derby/"
+},
+{
+    "name": "Ventura County Derby Darlins",
+    "country": "us",
+    "city": "Ventura, CA, us",
+    "loc": {
+        "lat": "34.2768173",
+        "lng": "-119.299657"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/ventura-county-derby-darlins/"
+},
+{
+    "name": "Vette City Roller Derby",
+    "country": "us",
+    "city": "Bowling Green, KY, us",
+    "loc": {
+        "lat": "36.9903199",
+        "lng": "-86.4436018"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/vette-city-roller-derby/"
+},
+{
+    "name": "Victorian Roller Derby League",
+    "country": "au",
+    "city": "Melbourne, VIC, au",
+    "loc": {
+        "lat": "-37.8142454",
+        "lng": "144.9631732"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/victorian-roller-derby-league/"
+},
+{
+    "name": "Twister City Roller Derby",
+    "country": "us",
+    "city": "Oklahoma City, OK, us",
+    "loc": {
+        "lat": "35.4729886",
+        "lng": "-97.5170536"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/twister-city-roller-derby/"
+},
+{
+    "name": "Vienna Roller Derby",
+    "country": "at",
+    "city": "Vienna, at",
+    "loc": {
+        "lat": "48.2083537",
+        "lng": "16.3725042"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/vienna-roller-derby/"
+},
+{
+    "name": "V Town Roller Derby",
+    "country": "us",
+    "city": "Visalia, CA, us",
+    "loc": {
+        "lat": "36.3317219",
+        "lng": "-119.288158"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/v-town-roller-derby/"
+},
+{
+    "name": "Waimea Wranglers Rough Rollers",
+    "country": "us",
+    "city": "Kamuela, HI, us",
+    "loc": {
+        "lat": "20.008250500000003",
+        "lng": "-155.64791046201805"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/waimea-wranglers-rough-rollers/"
+},
+{
+    "name": "Wasatch Roller Derby",
+    "country": "us",
+    "city": "Salt Lake City, UT, us",
+    "loc": {
+        "lat": "40.7596198",
+        "lng": "-111.886797"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/wasatch-roller-derby/"
+},
+{
+    "name": "Western Australia Roller Derby",
+    "country": "au",
+    "city": "Perth, WA, au",
+    "loc": {
+        "lat": "-31.9558933",
+        "lng": "115.8605855"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/western-australia-roller-derby/"
+},
+{
+    "name": "West Texas Roller Derby",
+    "country": "us",
+    "city": "Lubbock, TX, us",
+    "loc": {
+        "lat": "33.5855677",
+        "lng": "-101.8470215"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/west-texas-roller-derby/"
+},
+{
+    "name": "Windy City Rollers",
+    "country": "us",
+    "city": "Chicago, IL, us",
+    "loc": {
+        "lat": "41.8755616",
+        "lng": "-87.6244212"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/windy-city-rollers/"
+},
+{
+    "name": "Wine Town Rollers",
+    "country": "us",
+    "city": "Temecula, CA, us",
+    "loc": {
+        "lat": "33.4946353",
+        "lng": "-117.147366"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/wine-town-rollers/"
+},
+{
+    "name": "Yellow Rose Roller Derby",
+    "country": "us",
+    "city": "Houston, TX, us",
+    "loc": {
+        "lat": "29.7589382",
+        "lng": "-95.3676974"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/yellow-rose-roller-derby/"
+},
+{
+    "name": "Zürich City Roller Derby",
+    "country": "ch",
+    "city": "Zurich, ch",
+    "loc": {
+        "lat": "47.3744489",
+        "lng": "8.5410422"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/zurich-city-roller-derby/"
+},
+{
+    "name": "Barbed Wire Betties",
+    "country": "us",
+    "city": "DeKalb, IL, us",
+    "loc": {
+        "lat": "41.8903447",
+        "lng": "-88.7713953"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/barbed-wire-betties/"
+},
+{
+    "name": "Bogotá Bone Breakers",
+    "country": "co",
+    "city": "Bogotá, D.C., co",
+    "loc": {
+        "lat": "4.6533816",
+        "lng": "-74.0836333"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/bogota-bone-breakers/"
+},
+{
+    "name": "Roller Derby Bordeaux",
+    "country": "fr",
+    "city": "Bordeaux, fr",
+    "loc": {
+        "lat": "44.841225",
+        "lng": "-0.5800364"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/roller-derby-bordeaux/"
+},
+{
+    "name": "Brighton Rockers Roller Derby",
+    "country": "gb",
+    "city": "Brighton, England, gb",
+    "loc": {
+        "lat": "50.8214626",
+        "lng": "-0.1400561"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/brighton-rockers-roller-derby/"
+},
+{
+    "name": "Roller Derby Caen",
+    "country": "fr",
+    "city": "Caen, fr",
+    "loc": {
+        "lat": "49.1813403",
+        "lng": "-0.3635615"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/roller-derby-caen/"
+},
+{
+    "name": "Cape Town Rollergirls",
+    "country": "za",
+    "city": "Cape Town, za",
+    "loc": {
+        "lat": "-33.9288301",
+        "lng": "18.4172197"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/cape-town-rollergirls/"
+},
+{
+    "name": "Coastal Assassins Roller Derby",
+    "country": "au",
+    "city": "Golden Beach, QLD, au",
+    "loc": {
+        "lat": "-26.8156844",
+        "lng": "153.1197588"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/coastal-assassins-roller-derby/"
+},
+{
+    "name": "Capital City Crushers",
+    "country": "us",
+    "city": "Topeka, KS, us",
+    "loc": {
+        "lat": "39.049011",
+        "lng": "-95.677556"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/capital-city-crushers/"
+},
+{
+    "name": "Marquette Roller Derby",
+    "country": "us",
+    "city": "Marquette, MI, us",
+    "loc": {
+        "lat": "46.4481521",
+        "lng": "-87.6305899"
+    },
+    
+    "leagues": ["WFTDA"],
+    "wftdaWebsite": "https://wftda.com/wftda-leagues/marquette-roller-derby/"
+},
