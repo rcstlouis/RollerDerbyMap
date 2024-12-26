@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { LeagueRecord } from '@/model/league.model';
 import LeagueData from './LeagueData.vue';
-import { type PropType, defineProps, onMounted, reactive } from 'vue';
+import { type PropType, defineProps, onMounted, reactive, defineEmits } from 'vue';
 import { useVuelidate } from '@vuelidate/core'
 import { required, url } from '@vuelidate/validators'
 import { VFileUpload } from 'vuetify/labs/VFileUpload'
@@ -9,6 +9,8 @@ import { VFileUpload } from 'vuetify/labs/VFileUpload'
 const props = defineProps({
   leagueData: Object as PropType<LeagueRecord>
 })
+const emits = defineEmits(['setEditState'])
+
 const editState = reactive({
   isEditing: false,
 })
@@ -36,8 +38,14 @@ const rules = {
 
 const v$ = useVuelidate(rules, state)
 
+function setEdit() {
+  editState.isEditing = true
+  emits('setEditState', true)
+}
+
 function resetForm() {
   editState.isEditing = false
+  emits('setEditState', false)
   if (props.leagueData) {
     state.name = props.leagueData.name
     state.city = props.leagueData.city
@@ -60,7 +68,7 @@ onMounted(() => {
   <div v-if="!editState.isEditing">
     <LeagueData :league-record="leagueData"></LeagueData>
     <div class="mt-n14 mr-2" style="text-align: right; position:relative">
-      <v-btn icon="mdi-pencil" variant="flat" color="secondary" @click="editState.isEditing = true">
+      <v-btn icon="mdi-pencil" variant="flat" color="secondary" @click="setEdit">
       </v-btn>
     </div>
   </div>

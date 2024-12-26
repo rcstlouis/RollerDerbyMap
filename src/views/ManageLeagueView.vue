@@ -5,6 +5,7 @@ import { type LeagueRecord } from '@/model/league.model';
 import { computed, ref } from 'vue'
 
 const selectedLeagueId = ref<string>('')
+const isEditing = ref<boolean>(false)
 const availableLeagues = ref<string[]>(wftdaScrape.map(league => league.name))
 const selectedLeague = computed<LeagueRecord | undefined>((): LeagueRecord | undefined => {
   return wftdaScrape.find(league => league.name === selectedLeagueId.value)
@@ -17,9 +18,10 @@ const selectedLeague = computed<LeagueRecord | undefined>((): LeagueRecord | und
     <div class="px-4 pt-6" style="max-width: 800px; margin: auto">
       <h1>Admin Center</h1>
       <p>Select a league to manage</p>
-      <v-autocomplete v-model="selectedLeagueId" variant="outlined" :items="availableLeagues"
+      <v-autocomplete v-model="selectedLeagueId" variant="outlined" :items="availableLeagues" :disabled="isEditing"
         hide-details="auto"></v-autocomplete>
-      <ManageWidget v-if="selectedLeague" :league-data="selectedLeague" :key="selectedLeagueId"></ManageWidget>
+      <ManageWidget v-if="selectedLeague" :league-data="selectedLeague" :key="selectedLeagueId"
+        @set-edit-state="e => isEditing = e"></ManageWidget>
     </div>
   </v-sheet>
 </template>
