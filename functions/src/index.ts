@@ -10,8 +10,9 @@
 import { onRequest } from 'firebase-functions/v1/https'
 import useCors from 'cors'
 import dotenv from 'dotenv'
-import { DataSyncRequestBody } from './dataSync/dataSync.model.js'
+import { DataSyncRequestBody, RegisterUserRequestBody } from './dataSync/dataSync.model.js'
 import { entry as dataSyncEntry } from './dataSync/dataSync.js'
+import { entry as registerUserEntry } from './register/register.js'
 import { ContactUsConfig } from './contact/contact.model.js'
 import { sendContactMessage } from './contact/contact.js'
 
@@ -50,6 +51,24 @@ export const generatecontactemail = onRequest(async (req, res) => {
       .then(() => {
         res.statusCode = 200
         res.json({ data: 'Message successfully sent!' })
+      })
+      .catch((e) => {
+        res.statusCode = 400
+        res.statusMessage = e.message ?? e
+        res.json({ data: e })
+      })
+    return
+  })
+})
+
+export const registerUser2 = onRequest(async (req, res) => {
+  await cors(req, res, async (): Promise<void> => {
+    const body: RegisterUserRequestBody = req.body?.data ?? req.body
+    console.log(`Attempting to send message: ${JSON.stringify(body)}`)
+    await registerUserEntry(body)
+      .then(() => {
+        res.statusCode = 200
+        res.json({ data: `Successfully registered account ${body.email}` })
       })
       .catch((e) => {
         res.statusCode = 400

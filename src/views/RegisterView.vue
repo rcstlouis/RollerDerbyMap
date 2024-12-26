@@ -95,9 +95,8 @@ onMounted(() => {
 
           <v-alert v-if="formState.status === 'success'" color="success" class="mt-4" icon="mdi-check">
             You have successfully registered an new account!<br />
-            <p class="mt-2">If you are not redirected automatically, <a href="/manage" style="color:black">
-                click
-                here</a>.</p>
+            <p class="mt-2">Please <a href="/signin" style="color:black">
+                click here</a> to sign in.</p>
           </v-alert>
         </v-card-text>
       </v-card>

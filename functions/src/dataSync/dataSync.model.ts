@@ -3,8 +3,8 @@ export interface DataSyncRequestBody {
   docId: string
   userId: string
   operationType: 'create' | 'read' | 'update' | 'delete'
-  eventData?: any
-  leagueData?: any
+  eventData?: unknown
+  leagueData?: LeagueRecord
 }
 
 export interface LeagueRecord {
@@ -27,4 +27,10 @@ export interface LeagueRecord {
 export interface Coord {
   lat: number
   lng: number
+}
+
+export interface RegisterUserRequestBody {
+  name: string
+  pass: string
+  email: string
 }

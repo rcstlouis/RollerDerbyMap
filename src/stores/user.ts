@@ -2,7 +2,6 @@ import { defineStore } from 'pinia'
 import { auth, firebaseCloudFunction } from '@/services/firebase.service'
 import { signInWithEmailAndPassword, signOut, type User, type UserCredential } from 'firebase/auth'
 import { useLocalStorage } from '@vueuse/core'
-import { useRouter } from 'vue-router'
 import type { RegisterUserRequestBody } from '@/model/dataSync.model'
 
 export const useUserStore = defineStore({
@@ -20,7 +19,7 @@ export const useUserStore = defineStore({
       })
     },
     async register(body: RegisterUserRequestBody) {
-      return firebaseCloudFunction('register', body)
+      return firebaseCloudFunction('registerUser2', body)
     },
     async signout() {
       await signOut(auth)

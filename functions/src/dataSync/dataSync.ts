@@ -1,11 +1,5 @@
-import { initializeApp, cert } from 'firebase-admin/app'
-import { getFirestore } from 'firebase-admin/firestore'
+import { db } from '../services/firebase.service.js'
 import { DataSyncRequestBody } from './dataSync.model.js'
-
-const app = initializeApp({
-  credential: cert('./src/admin.json'),
-})
-const db = getFirestore(app)
 
 export async function entry(body: DataSyncRequestBody) {
   console.error('Not implemented')
