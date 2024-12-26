@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useUserStore } from './stores/user'
 // import { useDisplay } from 'vuetify'
@@ -10,6 +10,15 @@ const route = useRoute()
 const drawerIsOpen = ref(false)
 const userStore = useUserStore()
 // const { smAndUp } = useDisplay()
+
+watch(() => userStore.user, newVal => {
+
+  if (!newVal) {
+    if (router.currentRoute.value.fullPath === '/')
+      window.location.reload()
+    else router.push({ path: '/' })
+  }
+})
 </script>
 
 <template>
@@ -28,7 +37,20 @@ const userStore = useUserStore()
       </template>
 
       <template v-slot:append>
-        <img alt="BSB logo" class="logo" src="@/assets/logo.svg" width="60" height="60"
+        <v-menu v-if="userStore.user">
+          <template v-slot:activator="{ props }">
+            <v-btn color="secondary" v-bind="props" variant="flat" icon="mdi-account">
+            </v-btn>
+          </template>
+          <v-list>
+            <v-list-item @click="userStore.signout()">
+              <v-list-item-title>
+                Sign Out <v-icon>mdi-door</v-icon>
+              </v-list-item-title>
+            </v-list-item>
+          </v-list>
+        </v-menu>
+        <img v-else alt="BSB logo" class="logo" src="@/assets/logo.svg" width="60" height="60"
           @click="router.push({ path: '/' })" />
       </template>
     </v-app-bar>

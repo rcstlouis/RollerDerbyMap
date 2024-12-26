@@ -1,6 +1,6 @@
 import { initializeApp, cert } from 'firebase-admin/app'
 import { getFirestore } from 'firebase-admin/firestore'
-import { DataSyncRequestBody } from './dataSync.model'
+import { DataSyncRequestBody } from './dataSync.model.js'
 
 const app = initializeApp({
   credential: cert('./functions/src/admin.json'),

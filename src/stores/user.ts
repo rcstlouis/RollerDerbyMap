@@ -2,6 +2,7 @@ import { defineStore } from 'pinia'
 import { auth } from '@/services/firebase.service'
 import { signInWithEmailAndPassword, signOut, type User, type UserCredential } from 'firebase/auth'
 import { useLocalStorage } from '@vueuse/core'
+import { useRouter } from 'vue-router'
 
 export const useUserStore = defineStore({
   id: 'user',
