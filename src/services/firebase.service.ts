@@ -22,6 +22,6 @@ const functions = getFunctions(app)
 export const auth = getAuth(app)
 export const db = getFirestore(app)
 
-export function firebaseCloudFunction(functionName: string, body: any) {
+export function firebaseCloudFunction(functionName: string, body: unknown) {
   return httpsCallable(functions, functionName)(body)
 }

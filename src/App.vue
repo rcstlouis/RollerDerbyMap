@@ -60,6 +60,7 @@ watch(() => userStore.user, newVal => {
       <v-list-item link title="Map" prepend-icon="mdi-map" to="/"></v-list-item>
       <v-list-item link title="Events" prepend-icon="mdi-calendar" to="/events"></v-list-item>
       <v-list-item link title="Leagues" prepend-icon="mdi-format-list-text" to="/leagues"></v-list-item>
+      <v-list-item link title="Contact" prepend-icon="mdi-email" to="/contact"></v-list-item>
       <v-list-item link title="Donate/About" prepend-icon="mdi-heart" to="/about"></v-list-item>
       <v-divider color="white" thickness="1" class="border-opacity-75 mx-4" />
       <v-list-item v-if="!userStore.user" link title="Sign In" prepend-icon="mdi-account" to="/signin"></v-list-item>

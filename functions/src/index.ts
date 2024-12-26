@@ -10,8 +10,10 @@
 import { onRequest } from 'firebase-functions/v1/https'
 import useCors from 'cors'
 import dotenv from 'dotenv'
-import { DataSyncRequestBody } from './dataSync/dataSync.model'
-import { entry as dataSyncEntry } from './dataSync/dataSync'
+import { DataSyncRequestBody } from './dataSync/dataSync.model.js'
+import { entry as dataSyncEntry } from './dataSync/dataSync.js'
+import { ContactUsConfig } from './contact/contact.model.js'
+import { sendContactMessage } from './contact/contact.js'
 
 dotenv.config({ path: './src/.env' })
 
@@ -38,6 +40,24 @@ const cors = useCors({
       callback(new Error('Not allowed by CORS'))
     }
   },
+})
+
+export const generatecontactemail = onRequest(async (req, res) => {
+  await cors(req, res, async (): Promise<void> => {
+    const body: ContactUsConfig = req.body?.data ?? req.body
+    console.log(`Attempting to send message: ${JSON.stringify(body)}`)
+    await sendContactMessage(body)
+      .then(() => {
+        res.statusCode = 200
+        res.json({ data: 'Message successfully sent!' })
+      })
+      .catch((e) => {
+        res.statusCode = 400
+        res.statusMessage = e.message ?? e
+        res.json({ data: e })
+      })
+    return
+  })
 })
 
 export const dataSync = onRequest(async (req, res) => {

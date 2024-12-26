@@ -3,7 +3,7 @@ import { getFirestore } from 'firebase-admin/firestore'
 import { DataSyncRequestBody } from './dataSync.model.js'
 
 const app = initializeApp({
-  credential: cert('./functions/src/admin.json'),
+  credential: cert('./src/admin.json'),
 })
 const db = getFirestore(app)
 
