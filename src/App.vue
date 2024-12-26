@@ -2,11 +2,13 @@
 import { RouterView } from 'vue-router'
 import { ref } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
+import { useUserStore } from './stores/user'
 // import { useDisplay } from 'vuetify'
 
 const router = useRouter()
 const route = useRoute()
 const drawerIsOpen = ref(false)
+const userStore = useUserStore()
 // const { smAndUp } = useDisplay()
 </script>
 
@@ -33,11 +35,14 @@ const drawerIsOpen = ref(false)
     <v-navigation-drawer color="purple-lighten-2" location="start" name="drawer" v-model="drawerIsOpen" temporary>
       <v-list-item title="Derby Phone Book" class="font-style-bold mt-2" temporary></v-list-item>
       <v-divider color="white" thickness="1" class="border-opacity-75" />
-      <v-list-item link title="Home" prepend-icon="mdi-home" to="/"></v-list-item>
-      <v-list-item link title="Map" prepend-icon="mdi-map" to="/map"></v-list-item>
+      <v-list-item link title="Map" prepend-icon="mdi-map" to="/"></v-list-item>
       <v-list-item link title="Events" prepend-icon="mdi-calendar" to="/events"></v-list-item>
-      <v-divider color="white" thickness="1" class="border-opacity-75 mx-4" />
+      <v-list-item link title="Leagues" prepend-icon="mdi-format-list-text" to="/leagues"></v-list-item>
       <v-list-item link title="Donate/About" prepend-icon="mdi-heart" to="/about"></v-list-item>
+      <v-divider color="white" thickness="1" class="border-opacity-75 mx-4" />
+      <v-list-item v-if="!userStore.user" link title="Sign In" prepend-icon="mdi-account" to="/signin"></v-list-item>
+      <v-list-item v-if="userStore.user" link title="Manage" prepend-icon="mdi-pencil" to="/manage"
+        color="secondary"></v-list-item>
     </v-navigation-drawer>
     <v-main>
       <div class="d-flex flex-column flex-grow" style="height: 100%">

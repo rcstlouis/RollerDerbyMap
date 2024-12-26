@@ -11,6 +11,7 @@ export interface LeagueRecord {
   logo?: string
   leagues: ('WFTDA' | 'MRDA' | 'JRDA' | 'Short Track')[]
   website?: string
+  wftdaWebsite?: string
   lastActive?: Date
   tags?: string[]
 }

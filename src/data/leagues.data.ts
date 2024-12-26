@@ -1626,7 +1626,7 @@ export const wftdaScrape: LeagueRecord[] = [
     name: 'Cherry City Roller Derby',
     country: 'us',
     city: 'Salem, OR, us',
-    logo: '/img/leagues/WFTDA/cherry-city-derby-girls.webp',
+    logo: '/img/leagues/WFTDA/cherry-city-derby-girls.png',
     loc: {
       lat: 44.9391565,
       lng: -123.033121,
@@ -1678,7 +1678,7 @@ export const wftdaScrape: LeagueRecord[] = [
     name: 'Classic City Roller Derby',
     country: 'us',
     city: 'Athens, GA, us',
-    logo: '/img/leagues/WFTDA/classic-city-rollergirls.webp',
+    logo: '/img/leagues/WFTDA/classic-city-rollergirls.png',
     loc: {
       lat: 33.9597677,
       lng: -83.376398,
@@ -1821,7 +1821,7 @@ export const wftdaScrape: LeagueRecord[] = [
     name: 'Dark River Derby Coalition',
     country: 'us',
     city: 'Quincy, IL, us',
-    logo: '/img/leagues/WFTDA/dark-river-derby-coalition.webp',
+    logo: '/img/leagues/WFTDA/dark-river-derby-coalition.png',
     loc: {
       lat: 39.9356016,
       lng: -91.4098727,
@@ -1860,7 +1860,7 @@ export const wftdaScrape: LeagueRecord[] = [
     name: 'Denver Roller Derby',
     country: 'us',
     city: 'Denver, CO, us',
-    logo: '/img/leagues/WFTDA/denver-roller-derby.webp',
+    logo: '/img/leagues/WFTDA/denver-roller-derby.png',
     loc: {
       lat: 39.775168,
       lng: -105.024387,
@@ -1977,7 +1977,7 @@ export const wftdaScrape: LeagueRecord[] = [
     name: 'Dominion Derby Girls',
     country: 'us',
     city: 'Virginia Beach, VA, us',
-    logo: '/img/leagues/WFTDA/dominion-derby-girls.webp',
+    logo: '/img/leagues/WFTDA/dominion-derby-girls.png',
     loc: {
       lat: 36.8496579,
       lng: -75.9760751,
@@ -1990,7 +1990,7 @@ export const wftdaScrape: LeagueRecord[] = [
     name: 'Downriver Roller Dolls',
     country: 'us',
     city: 'Woodhaven, MI, us',
-    logo: '/img/leagues/WFTDA/downriver-roller-dolls.webp',
+    logo: '/img/leagues/WFTDA/downriver-roller-dolls.png',
     loc: {
       lat: 42.1370519,
       lng: -83.2451066,
@@ -2042,7 +2042,7 @@ export const wftdaScrape: LeagueRecord[] = [
     name: 'Durango Roller Girls',
     country: 'us',
     city: 'Durango, CO, us',
-    logo: '/img/leagues/WFTDA/durango-roller-girls.webp',
+    logo: '/img/leagues/WFTDA/durango-roller-girls.png',
     loc: {
       lat: 37.2769484,
       lng: -107.8766,
@@ -2445,7 +2445,7 @@ export const wftdaScrape: LeagueRecord[] = [
     name: 'Happy Valley Derby Darlins',
     country: 'us',
     city: 'Utah County, UT, us',
-    logo: '/img/leagues/WFTDA/happy-valley-derby-darlins.webp',
+    logo: '/img/leagues/WFTDA/happy-valley-derby-darlins.png',
     loc: {
       lat: 40.177058,
       lng: -111.69107185434031,
@@ -2510,7 +2510,7 @@ export const wftdaScrape: LeagueRecord[] = [
     name: 'Hartford Area Roller Derby',
     country: 'us',
     city: 'Manchester, CT, us',
-    logo: '/img/leagues/WFTDA/hartford-area-roller-derby.webp',
+    logo: '/img/leagues/WFTDA/hartford-area-roller-derby.png',
     loc: {
       lat: 41.7834017,
       lng: -72.5231973,
@@ -2562,7 +2562,7 @@ export const wftdaScrape: LeagueRecord[] = [
     name: 'Hudson Valley Horrors Roller Derby',
     country: 'us',
     city: 'Kingston, NY, us',
-    logo: '/img/leagues/WFTDA/hudson-valley-horrors-roller-derby.webp',
+    logo: '/img/leagues/WFTDA/hudson-valley-horrors-roller-derby.png',
     loc: {
       lat: 41.9287812,
       lng: -74.0023702,
@@ -2835,7 +2835,7 @@ export const wftdaScrape: LeagueRecord[] = [
     name: 'Youngstown Area Roller Derby',
     country: 'us',
     city: 'Youngstown, OH, us',
-    logo: '/img/leagues/WFTDA/Youngstown-Roller-Derby.webp',
+    logo: '/img/leagues/WFTDA/Youngstown-Roller-Derby.png',
     loc: {
       lat: 41.1035786,
       lng: -80.6520161,
@@ -3134,7 +3134,7 @@ export const wftdaScrape: LeagueRecord[] = [
     name: 'Munich Rolling Rebels',
     country: 'de',
     city: 'Munich, de',
-    logo: '/img/leagues/WFTDA/munich-rolling-rebels.webp',
+    logo: '/img/leagues/WFTDA/munich-rolling-rebels.png',
     loc: {
       lat: 48.1371079,
       lng: 11.5753822,
@@ -3277,7 +3277,7 @@ export const wftdaScrape: LeagueRecord[] = [
     name: 'No Coast Roller Derby',
     country: 'us',
     city: 'Lincoln, NE, us',
-    logo: '/img/leagues/WFTDA/no-coast.webp',
+    logo: '/img/leagues/WFTDA/no-coast.png',
     loc: {
       lat: 40.8088861,
       lng: -96.7077751,
@@ -3303,7 +3303,7 @@ export const wftdaScrape: LeagueRecord[] = [
     name: 'North Texas Roller Derby',
     country: 'us',
     city: 'Denton, TX, us',
-    logo: '/img/leagues/WFTDA/north-texas-roller-derby.webp',
+    logo: '/img/leagues/WFTDA/north-texas-roller-derby.png',
     loc: {
       lat: 33.1838787,
       lng: -97.1413417,
@@ -4057,7 +4057,7 @@ export const wftdaScrape: LeagueRecord[] = [
     name: 'SoCal Derby',
     country: 'us',
     city: 'San Diego, CA, us',
-    logo: '/img/leagues/WFTDA/socal-derby.webp',
+    logo: '/img/leagues/WFTDA/socal-derby.png',
     loc: {
       lat: 32.7166921,
       lng: -117.169295,
@@ -4148,7 +4148,7 @@ export const wftdaScrape: LeagueRecord[] = [
     name: 'SO Derby',
     country: 'us',
     city: 'Medford, OR, us',
-    logo: '/img/leagues/WFTDA/so-derby.webp',
+    logo: '/img/leagues/WFTDA/so-derby.png',
     loc: {
       lat: 42.3264181,
       lng: -122.8718605,
@@ -4187,7 +4187,7 @@ export const wftdaScrape: LeagueRecord[] = [
     name: 'State College Area Roller Derby',
     country: 'us',
     city: 'State College, PA, us',
-    logo: '/img/leagues/WFTDA/state-college-area-roller-derby.webp',
+    logo: '/img/leagues/WFTDA/state-college-area-roller-derby.png',
     loc: {
       lat: 40.7944504,
       lng: -77.8616386,
@@ -4486,7 +4486,7 @@ export const wftdaScrape: LeagueRecord[] = [
     name: 'Vette City Roller Derby',
     country: 'us',
     city: 'Bowling Green, KY, us',
-    logo: '/img/leagues/WFTDA/vette-city-roller-derby.webp',
+    logo: '/img/leagues/WFTDA/vette-city-roller-derby.png',
     loc: {
       lat: 36.9903199,
       lng: -86.4436018,
@@ -4525,7 +4525,7 @@ export const wftdaScrape: LeagueRecord[] = [
     name: 'Vienna Roller Derby',
     country: 'at',
     city: 'Vienna, at',
-    logo: '/img/leagues/WFTDA/vienna-roller-derby.webp',
+    logo: '/img/leagues/WFTDA/vienna-roller-derby.png',
     loc: {
       lat: 48.2083537,
       lng: 16.3725042,
@@ -4577,7 +4577,7 @@ export const wftdaScrape: LeagueRecord[] = [
     name: 'Western Australia Roller Derby',
     country: 'au',
     city: 'Perth, WA, au',
-    logo: '/img/leagues/WFTDA/western-australia-roller-derby.webp',
+    logo: '/img/leagues/WFTDA/western-australia-roller-derby.png',
     loc: {
       lat: -31.9558933,
       lng: 115.8605855,
@@ -4774,8 +4774,8 @@ export const wftdaScrape: LeagueRecord[] = [
     city: 'Ulrecht, nl',
     logo: '/img/leagues/WFTDA/dom-city.webp',
     loc: {
-      lat: '',
-      lng: '',
+      lat: 0,
+      lng: 0,
     },
 
     leagues: ['WFTDA'],
@@ -4863,7 +4863,7 @@ export const wftdaScrape: LeagueRecord[] = [
     name: 'High Altitude Roller Derby',
     country: 'us',
     city: 'Flagstaff, AZ, us',
-    logo: '/img/leagues/WFTDA/high-altitude.webp',
+    logo: '/img/leagues/WFTDA/high-altitude.png',
     loc: {
       lat: 35.1987522,
       lng: -111.651822,
@@ -5684,8 +5684,8 @@ export const wftdaScrape: LeagueRecord[] = [
     city: 'Norwich, Great Britain, gb',
     logo: '/img/leagues/WFTDA/Norfolk-Roller-Derby.webp',
     loc: {
-      lat: '',
-      lng: '',
+      lat: 0,
+      lng: 0,
     },
 
     leagues: ['WFTDA'],
