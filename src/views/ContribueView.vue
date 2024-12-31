@@ -1,0 +1,26 @@
+<script setup lang="ts">
+import LeagueData from '@/components/LeagueData.vue';
+import ManageLeague from '@/components/ManageLeague.vue';
+import { wftdaScrape } from '@/data/leagues.data';
+import { type LeagueRecord } from '@/model/league.model';
+import { ref, computed } from 'vue'
+
+const filter = ref<string>('')
+const filteredLeagues = computed<LeagueRecord[]>(() => {
+  const fl = wftdaScrape.sort((a, b) => {
+    if (a.name === b.name) return 0
+    return a.name < b.name ? -1 : 1
+  })
+  if (!filter.value.length) return fl
+  return fl.filter(league => league.city.toLocaleLowerCase().includes(filter.value.toLocaleLowerCase()) || league.name.toLocaleLowerCase().includes(filter.value.toLocaleLowerCase()))
+})
+</script>
+
+<template>
+  <v-sheet color="black">
+    <div class="px-4 pt-6" style="max-width: 800px; margin: auto">
+      <h1>Contribute</h1>
+      <ManageLeague></ManageLeague>
+    </div>
+  </v-sheet>
+</template>

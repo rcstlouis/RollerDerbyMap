@@ -1,6 +1,7 @@
 import type { Coord } from './maps.model'
 
 export interface LeagueRecord {
+  id?: string
   name: string
 
   country: string

@@ -64,8 +64,10 @@ watch(() => userStore.user, newVal => {
       <v-list-item link title="Donate/About" prepend-icon="mdi-heart" to="/about"></v-list-item>
       <v-divider color="white" thickness="1" class="border-opacity-75 mx-4" />
       <v-list-item v-if="!userStore.user" link title="Sign In" prepend-icon="mdi-account" to="/signin"></v-list-item>
-      <v-list-item v-if="userStore.user" link title="Manage" prepend-icon="mdi-pencil" to="/manage"
-        color="secondary"></v-list-item>
+      <v-list-item v-if="userStore.user" link title="Manage" prepend-icon="mdi-pencil" to="/manage" color="secondary"
+        variant="flat" active-color="secondary"></v-list-item>
+      <v-list-item v-if="userStore.user" link title="Contribute" prepend-icon="mdi-plus" to="/contribute"
+        color="secondary" variant="flat" active-color="secondary"></v-list-item>
     </v-navigation-drawer>
     <v-main>
       <div class="d-flex flex-column flex-grow" style="height: 100%">

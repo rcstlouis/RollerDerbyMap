@@ -2,6 +2,8 @@ import { default as nodemailer } from 'nodemailer'
 import { ContactUsConfig } from './contact.model.js'
 import { default as escape } from 'escape-html'
 import { dmHex } from '../discordBot/bot.js'
+import { db } from '../services/firebase.service.js'
+import { MessageRecord } from '../dataSync/dataSync.model.js'
 
 export async function sendMessage(
   subject: string,
@@ -56,4 +58,6 @@ export async function sendContactMessage(config: ContactUsConfig) {
   await dmHex(discordMessage).catch((e: Error) =>
     console.error(`DM Failed :( ${JSON.stringify(e)}`),
   )
+  const messageRecord = new MessageRecord(config)
+  await db.collection('messages').doc(messageRecord.id).set(messageRecord)
 }

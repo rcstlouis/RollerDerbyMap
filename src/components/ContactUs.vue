@@ -25,15 +25,6 @@ const formId = ref<number>(1)
 const formRef = ref<unknown>(null)
 
 const emailDict = {
-  join: { email: 'join@baystatebrawlers.com', tag: 'Intake & Training:' },
-  liaison: { email: 'liaison@baystatebrawlers.com', tag: 'To Play Us:' },
-  officials: { email: 'officials@baystatebrawlers.com', tag: 'Officiate With Us:' },
-  volunteer: { email: 'volunteer@baystatebrawlers.com', tag: 'Volunteer With Us:' },
-  sponsors: { email: 'sponsors@baystatebrawlers.com', tag: 'Advertise With Us:' },
-  press: { email: 'press@baystatebrawlers.com', tag: 'Press Inquiries:' },
-  events: { email: 'events@baystatebrawlers.com', tag: 'Events & Fundraisers:' },
-  //   webmaster: { email: 'webmaster@baystatebrawlers.com', tag: 'Webmaster:' },
-  board: { email: 'board@baystatebrawlers.com', tag: 'Contact our Board of Directors:' }
 } as { [emailName: string]: { email: string; tag: string } }
 
 function sendMessage() {
@@ -124,7 +115,7 @@ function resetForm() {
         Send another
       </v-btn>
     </v-alert>
-    <h2 v-if="!hasFormOnly" class="mt-6">Or Contact One of Our Committees</h2>
+    <!-- <h2 v-if="!hasFormOnly" class="mt-6">Or Contact One of Our Committees</h2>
     <v-card v-if="!hasFormOnly" color="grey-lighten-3" class="pa-4 pt-2 mb-4 mt-0">
       <v-container>
         <div v-for="emailName of Object.keys(emailDict)" :key="emailName">
@@ -150,6 +141,6 @@ function resetForm() {
           </v-row>
         </div>
       </v-container>
-    </v-card>
+    </v-card> -->
   </div>
 </template>

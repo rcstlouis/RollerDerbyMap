@@ -84,9 +84,9 @@ export const dataSync = onRequest(async (req, res) => {
     const body: DataSyncRequestBody = req.body?.data ?? req.body
     console.log(`Attempting to send message: ${JSON.stringify(body)}`)
     await dataSyncEntry(body)
-      .then(() => {
-        res.statusCode = 200
-        res.json({ data: 'Message successfully sent!' })
+      .then((response) => {
+        res.statusCode = response.status
+        res.json(response)
       })
       .catch((e) => {
         res.statusCode = 400
