@@ -3,6 +3,7 @@ from geopy.geocoders import Nominatim
 from time import sleep
 # from pygeocoder import Geocoder
 from urllib.request import urlopen
+import pandas as pd
 
 class LeagueData:
     def __init__(self, name, city, country, icon, wftda_page):
@@ -16,23 +17,54 @@ class LeagueData:
         lat = self.coords.latitude if self.coords is not None else '""'
         lng = self.coords.longitude if self.coords is not None else '""'
         return f"""{{
-    "name": "{self.name}",
-    "country": "{self.country}",
-    "city": "{self.city}",
-    "logo": "{self.icon}",
-    "loc": {{
-        "lat": {lat},
-        "lng": {lng}
-    }},
-    
-    "leagues": ["WFTDA"],
-    "wftdaWebsite": "{self.wftda_page}"
-}},"""
+            "name": "{self.name}",
+            "country": "{self.country}",
+            "city": "{self.city}",
+            "logo": "{self.icon}",
+            "loc": {{
+                "lat": {lat},
+                "lng": {lng}
+            }},
+            
+            "leagues": ["WFTDA"],
+            "wftdaWebsite": "{self.wftda_page}"
+        }},"""
+
+    def addToDF(self, df):
+        return pd.concat([df,
+        pd.DataFrame({
+            'name': [self.name],
+            'country': [self.country],
+            'state': [''],
+            'city': [self.city],
+            'logo': [self.icon],
+            'rulesets': ['WFTDA'],
+            'website': [''],
+            'wftdaWebsite': [self.wftda_page],
+            'tags': ['[]'],
+            'isDeleted': ['FALSE'],
+            'lat': [self.coords.latitude if self.coords else ''],
+            'lng': [self.coords.longitude if self.coords else ''],
+        })], ignore_index=True)
 
 def main():
     leagues = []
     geolocator = Nominatim(user_agent="derby_phonebook")
     # gc = Geocoder(api_key='AIzaSyCq8tHnfFaqbUrIFP51bmTK2QRi-iPW7x0')
+    df = pd.DataFrame({
+        'name': [],
+        'country': [],
+        'state': [],
+        'city': [],
+        'logo': [],
+        'rulesets': [],
+        'website': [],
+        'wftdaWebsite': [],
+        'tags': [],
+        'isDeleted': [],
+        'lat': [],
+        'lng': [],
+    })
     
     with open('./python-scrape/WFTDA Leagues - WFTDA.html', 'r', encoding="utf-8") as file:
         with open('./python-scrape/out.json', 'w') as outFile:
@@ -60,7 +92,10 @@ def main():
                 #     print(html_string)
                 
                 # Look up city coordinates
-                coords = attempt_geocode(city, geolocator)
+                try:
+                    coords = attempt_geocode(city, geolocator)
+                except:
+                    print('*** Geocode failed for ', city, ' ***')
                 if coords:
                     print(f'{name} in {city} has coords {coords.latitude}, {coords.longitude}')
                 # results = gc.geocode(city)
@@ -69,10 +104,13 @@ def main():
                 ld.coords = coords
                 leagues.append(ld)
                 # sleep(1.5)
+                df = ld.addToDF(df)
                 
                 print(ld.p(), file=outFile)
             print('\n]', file=outFile)
             sleep(1)
+
+    df.to_csv('./leagues.csv', index=False)
         
             
 def fixTypos(city):
@@ -90,7 +128,7 @@ def fixTypos(city):
         return 'Bogota Columbia'
     return city
 
-def attempt_geocode(address, geolocator, attempt=1, max_attempts=10):
+def attempt_geocode(address, geolocator, attempt=1, max_attempts=8):
     try:
         return geolocator.geocode(fixTypos(address).replace(',', ''))
     except:

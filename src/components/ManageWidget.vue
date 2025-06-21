@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import type { LeagueRecord } from '@/model/league.model';
-import { type PropType, defineProps, reactive, defineEmits } from 'vue';
-import ManageLeague from './ManageLeague.vue';
+import type { LeagueRecord } from '@/model/league.model'
+import { type PropType, defineProps, reactive, defineEmits } from 'vue'
+import ManageLeague from './ManageLeague.vue'
 
 const props = defineProps({
-  leagueData: Object as PropType<LeagueRecord>
+  leagueData: Object as PropType<LeagueRecord>,
 })
 const emits = defineEmits(['setEditState'])
 

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 import { getMap } from '@/services/maps.service'
 import { ref, onMounted, reactive } from 'vue'
 import { makeid } from '@/services/utils.service'
@@ -46,4 +46,4 @@ onMounted(async () => {
     </div>
     This is below the map
   </v-card>
-</template>
+</template> -->

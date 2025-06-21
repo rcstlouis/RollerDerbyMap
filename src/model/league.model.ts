@@ -1,4 +1,4 @@
-import type { Coord } from './maps.model'
+// import type { Coord } from './maps.model'
 
 export interface LeagueRecord {
   id?: string
@@ -7,7 +7,9 @@ export interface LeagueRecord {
   country: string
   state?: string
   city: string
-  loc: Coord
+  // loc: Coord
+  lat: number
+  lng: number
 
   logo?: string
   leagues: ('WFTDA' | 'MRDA' | 'JRDA' | 'Short Track')[]
