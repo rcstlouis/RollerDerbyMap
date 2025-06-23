@@ -1,3 +1,5 @@
+import type { LeagueRecord } from '@/model/league.model'
+
 export function makeid(length: number) {
   let result = ''
   const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
@@ -17,4 +19,10 @@ export function fileToBase64(file: File): Promise<string> {
     reader.onload = () => resolve(reader.result as string)
     reader.onerror = reject
   })
+}
+
+export function leaguesFilteredOn(searchstring: string) {
+  return (league: LeagueRecord): boolean =>
+    league.city.toLocaleLowerCase().includes(searchstring.toLocaleLowerCase()) ||
+    league.name.toLocaleLowerCase().includes(searchstring.toLocaleLowerCase())
 }

@@ -4,6 +4,7 @@ import { type LeagueRecord } from '@/model/league.model'
 import { useDataStore } from '@/stores/data'
 import { storeToRefs } from 'pinia'
 import { type PropType, watch, onMounted, ref } from 'vue'
+import { leaguesFilteredOn } from '@/services/utils.service'
 
 const dataStore = useDataStore()
 const { activeFilters, mapBounds } = storeToRefs(dataStore)
@@ -61,13 +62,7 @@ function updateActiveLeagueList(onlyUpdateBounds?: boolean) {
     // Update using search string
     if (activeFilters.value.searchString && activeFilters.value.searchString?.length) {
       leagueLists.filteredLeagues = leagueLists.filteredLeagues.filter(
-        (league) =>
-          league.city
-            .toLocaleLowerCase()
-            .includes(activeFilters.value.searchString!.toLocaleLowerCase()) ||
-          league.name
-            .toLocaleLowerCase()
-            .includes(activeFilters.value.searchString!.toLocaleLowerCase()),
+        leaguesFilteredOn(activeFilters.value.searchString),
       )
     }
   }
