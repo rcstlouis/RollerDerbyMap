@@ -6,6 +6,7 @@ import type { DataSyncRequestBody } from '@/model/dataSync.model'
 import type { HttpsCallableResult } from 'firebase/functions'
 import { supabase } from '@/services/supabaseClient.service'
 import type { LeagueRecord } from '@/model/league.model'
+import type { LeagueFilters } from '@/model/maps.model'
 
 let unsub = () => {
   // initializes the variable
@@ -18,6 +19,13 @@ export const useDataStore = defineStore({
       events: [] as BSBEvent[],
       leagues: [] as LeagueRecord[],
       example: undefined as unknown,
+      tags: [] as string[],
+      activeFilters: {
+        tags: [],
+        searchString: '',
+        useMap: true,
+      } as LeagueFilters,
+      mapBounds: undefined as undefined | google.maps.LatLngBounds,
     }
   },
   actions: {
@@ -41,13 +49,26 @@ export const useDataStore = defineStore({
       const { data } = await supabase.from('League').select()
       const l = data?.map((lr) => {
         const parsedRecord: LeagueRecord = JSON.parse(JSON.stringify(lr ?? {}))
-        // parsedRecord.loc = { lat: lr.lat, lng: lr.lng }
-        // console.log(parsedRecord.loc)
-        parsedRecord.leagues = lr.rulesets
+        let rulesets: string[] = []
+        if (Array.isArray(lr.rulesets)) {
+          rulesets = lr.rulesets
+        }
+        if (typeof lr.leagues === 'string') {
+          rulesets = JSON.parse(lr.rulesets) as string[]
+        }
+        parsedRecord.leagues = rulesets as ['WFTDA'] // Overly restrictive cast is only used to satisfy linting
         return parsedRecord
       }) as LeagueRecord[]
       this.leagues = l
       console.log(`Found ${l.length} known leagues`)
+
+      // Initialize Tags
+      const tagDict: { [tagName: string]: true } = {}
+      for (const league of l) {
+        for (const ruleset of league.leagues) tagDict[ruleset] = true
+      }
+      this.tags = Object.keys(tagDict).sort()
+
       return this.leagues
     },
   },
