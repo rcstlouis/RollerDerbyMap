@@ -5,13 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port 8080",
+    "serve": "vite --port 8080",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
     "lint": "eslint . --fix",
     "format": "prettier --write src/",
-    "deploy": "yarn run build-only && firebase deploy --only hosting:rollerderbymap"
+    "deploy": "yarn run build-only && firebase deploy --only hosting:rollerderbymap",
+    "deploy:preview": "yarn run build-only && firebase hosting:channel:deploy preview --expires 7d --debug"
   },
   "dependencies": {
     "@googlemaps/extended-component-library": "^0.6.14",

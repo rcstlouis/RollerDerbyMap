@@ -34,7 +34,9 @@ const { leagues } = storeToRefs(useDataStore())
       <div :class="`d-flex w-100 ${smAndDown ? 'flex-column' : ''}`">
         <div class="flex-grow-1">
           <v-sheet color="grey-lighten-1">
-            <MapboxWidget></MapboxWidget>
+            <div class="d-flex justify-center">
+              <MapboxWidget></MapboxWidget>
+            </div>
             <!-- <MapWidget v-if="" @bounds="setBounds"></MapWidget> -->
             <!-- <v-card color="primary" class="pa-2 font-weight-bold text-center"> -->
             <!-- {{ filteredLeagues?.length ?? 0 }} League{{ filteredLeagues.length === 1 ? '' : 's' }} -->

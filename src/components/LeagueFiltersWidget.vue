@@ -2,7 +2,7 @@
 import type { LeagueFilters } from '@/model/maps.model'
 import { useDataStore } from '@/stores/data'
 import { storeToRefs } from 'pinia'
-import { onMounted, reactive, ref } from 'vue'
+import { onMounted, reactive } from 'vue'
 import '@googlemaps/extended-component-library/place_picker.js'
 
 const dataStore = useDataStore()
@@ -31,12 +31,12 @@ onMounted(() => {
   filterState.tags = dataStore.activeFilters.tags ?? []
   filterState.useMap = dataStore.activeFilters.useMap ?? true
 
-  const placePicker = document.getElementById('place-picker')
-  placePicker?.addEventListener('gmpx-placechange', () => {
-    const loc = ((placePicker as unknown)!.value as google.maps.Place).location
-    console.log(`Centering map to ${loc}`)
-    if (loc) dataStore.mapFocus = loc
-  })
+  // const placePicker = document.getElementById('place-picker')
+  // placePicker?.addEventListener('gmpx-placechange', () => {
+  // const loc = ((placePicker as unknown)!.value as google.maps.Place).location
+  // console.log(`Centering map to ${loc}`)
+  // if (loc) dataStore.mapFocus = loc
+  // })
 })
 </script>
 
@@ -46,11 +46,11 @@ onMounted(() => {
       The map is very slow to load right now; please give it a minute.
     </v-alert>
     <h1>Map Controls</h1>
-    <gmpx-place-picker
+    <!-- <gmpx-place-picker
       placeholder="Center Map On"
       id="place-picker"
       style="width: 100%"
-    ></gmpx-place-picker>
+    ></gmpx-place-picker> -->
 
     <h1>Filters</h1>
     <v-select

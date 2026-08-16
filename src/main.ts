@@ -46,8 +46,6 @@ const vuetify = createVuetify({
 
 import App from './App.vue'
 import router from './router'
-import { initMapLoader } from './services/maps.service'
-initMapLoader()
 
 const app = createApp(App)
 
