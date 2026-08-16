@@ -3,7 +3,7 @@ import dotenv from 'dotenv'
 import { ContactUsConfig } from './contact.model.js'
 import { default as escape } from 'escape-html'
 
-dotenv.config({ path: '.\\functions\\src\\.env' })
+dotenv.config({ path: './functions/src/env' })
 
 // const body = "Hey there,<br/>If you're seeing this, the email is getting smarter in <b>html</b>.<br/>-Hex | They/Them"
 // const subject = "Testing BSB Cloud Function"

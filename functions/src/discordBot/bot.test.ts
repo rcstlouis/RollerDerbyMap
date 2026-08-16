@@ -1,5 +1,5 @@
 import dotenv from 'dotenv'
-dotenv.config({ path: '.\\functions\\src\\.env' })
+dotenv.config({ path: './functions/src/env' })
 
 import { sendToLeagueServer } from './bot.js'
 

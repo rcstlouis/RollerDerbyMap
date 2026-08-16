@@ -12,7 +12,7 @@ export async function entry(body: RegisterUserRequestBody) {
     })
     .then(async (user: UserRecord) => {
       const rdmUser = new RDMUserRecord(user)
-      await addToLogs('user:register', rdmUser, { newData: rdmUser })
+      await addToLogs('user:register', { newData: rdmUser }, rdmUser)
       return db.collection('users').doc(rdmUser.id).set(rdmUser)
     })
 }

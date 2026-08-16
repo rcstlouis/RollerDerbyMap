@@ -8,6 +8,7 @@
  */
 
 import { onRequest } from 'firebase-functions/v1/https'
+import { onSchedule } from 'firebase-functions/v2/scheduler'
 import useCors from 'cors'
 import dotenv from 'dotenv'
 import { DataSyncRequestBody, RegisterUserRequestBody } from './dataSync/dataSync.model.js'
@@ -15,6 +16,7 @@ import { entry as dataSyncEntry } from './dataSync/dataSync.js'
 import { entry as registerUserEntry } from './register/register.js'
 import { ContactUsConfig } from './contact/contact.model.js'
 import { sendContactMessage } from './contact/contact.js'
+import { wake } from './dataSync/dataSync-sb.js'
 
 dotenv.config({ path: './src/.env' })
 
@@ -95,4 +97,8 @@ export const dataSync = onRequest(async (req, res) => {
       })
     return
   })
+})
+
+export const heartbeat = onSchedule('0 0 * * *', async () => {
+  await wake()
 })

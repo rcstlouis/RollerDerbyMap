@@ -1,5 +1,5 @@
 import { Timestamp } from 'firebase-admin/firestore'
-import { makeFirestoreId } from '../utils'
+import { makeFirestoreId } from '../utils.js'
 import { UserRecord } from 'firebase-admin/auth'
 import { ContactUsConfig } from '../contact/contact.model'
 

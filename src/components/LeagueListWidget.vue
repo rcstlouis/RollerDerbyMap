@@ -33,6 +33,10 @@ watch(
   { deep: true },
 )
 
+function selectLeague(league: LeagueRecord) {
+  dataStore.mapFocus = { lat: league.lat, lng: league.lng }
+}
+
 const props = defineProps({
   leagues: Object as PropType<LeagueRecord[]>,
 })
@@ -96,6 +100,7 @@ onMounted(() => {
       <!-- <p>Unbound Leagues: {{ leagueLists.filteredLeagues?.length ?? 0 }}</p> -->
       <p>Leagues matching criteria: {{ leagueLists.boundAndFilteredLeagues?.length ?? 0 }}</p>
 
+      <p>Map Center: {{ dataStore.mapFocus }}</p>
       <!-- <v-text-field
         v-model="filter"
         label="Filter"
@@ -103,7 +108,12 @@ onMounted(() => {
         variant="outlined"
         density="compact"
       ></v-text-field> -->
-      <div v-for="league of leagueLists.boundAndFilteredLeagues" :key="league.name" class="mb-4">
+      <div
+        v-for="league of leagueLists.boundAndFilteredLeagues"
+        :key="league.name"
+        class="mb-4"
+        @click="selectLeague(league)"
+      >
         <LeagueData :league-record="league"></LeagueData>
       </div>
       <div v-if="!leagueLists.allLeagues?.length">

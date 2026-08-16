@@ -19,7 +19,7 @@ const mapState = reactive({
   manager: undefined as undefined | MapManager,
   map: undefined as undefined | google.maps.Map,
 })
-const { leagues } = storeToRefs(useDataStore())
+const { leagues, mapFocus } = storeToRefs(useDataStore())
 
 const emit = defineEmits(['bounds'])
 // const map = computed<google.maps.Map | undefined>(() =>
@@ -40,6 +40,16 @@ watch(
         emit('bounds', b)
       }
     })
+  },
+)
+
+watch(
+  () => mapFocus.value,
+  (newVal: google.maps.LatLng | { lat: number; lng: number } | undefined) => {
+    if (newVal && mapState.map) {
+      mapState.map.setCenter(newVal)
+      mapState.map.setZoom(10)
+    }
   },
 )
 
@@ -71,6 +81,8 @@ onMounted(async () => {
       :center="center"
       :zoom="6"
       :map-id="mapState.mapId"
+      zoom-control
+      :street-view-control="false"
     >
       <MarkerCluster>
         <div v-for="league of Object.values(mapState.manager?.leagueDict ?? {})" :key="league.name">
@@ -83,12 +95,18 @@ onMounted(async () => {
           >
             <v-card style="text-align: center; height: 78px; width: 78px" class="pa-1">
               <div style="color: black">{{ league.name }}</div>
-              <img
+              <!-- <img
                 v-if="league.logo === '/img/leagues/WFTDA/trans.png'"
                 src="/logo.svg"
                 style="width: 40px; height: 40px"
               />
-              <img v-else :src="league.logo" style="width: 40px; height: 40px" />
+              <img
+                v-else
+                :src="league.logo"
+                lazy-src="/logo.svg"
+                style="width: 40px; height: 40px"
+              /> -->
+              <img src="/logo.svg" style="width: 40px; height: 40px" />
             </v-card>
           </CustomMarker>
         </div>

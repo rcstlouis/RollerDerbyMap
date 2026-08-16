@@ -2,8 +2,8 @@
   "name": "functions",
   "type": "module",
   "scripts": {
-    "lint": "eslint -c .\\eslintrc.json .\\src",
-    "build": "tsc -p .\\tsconfig.json",
+    "lint": "eslint -c ./eslintrc.json ./src",
+    "build": "tsc -p ./tsconfig.json",
     "build:watch": "tsc --watch",
     "serve": "npm run build && firebase emulators:start --only functions",
     "shell": "npm run build && firebase functions:shell",
@@ -12,24 +12,33 @@
     "logs": "firebase functions:log"
   },
   "engines": {
-    "node": "18"
+    "node": "22"
   },
   "main": "lib/index.js",
   "dependencies": {
+    "@solana/wallet-standard-features": "^1.3.0",
+    "@supabase/supabase-js": "^2.50.2",
+    "dayjs": "^1.11.21",
     "discord.js": "^14.15.3",
     "dotenv": "^16.4.7",
     "escape-html": "^1.0.3",
     "firebase-admin": "^11.8.0",
-    "firebase-functions": "~5.0.1",
-    "nodemailer": "^6.9.16"
+    "firebase-functions": "^7.0.0",
+    "mysql2": "^3.23.3",
+    "nodemailer": "^6.9.16",
+    "papaparse": "^5.5.3",
+    "read-excel-file": "^6.0.1",
+    "ssh2": "^1.17.0"
   },
   "devDependencies": {
     "@types/escape-html": "^1.0.4",
     "@types/node": "^22.10.2",
     "@types/nodemailer": "^6.4.17",
-    "@typescript-eslint/eslint-plugin": "^5.12.0",
-    "@typescript-eslint/parser": "^5.12.0",
-    "eslint": "^9.17.0",
+    "@types/papaparse": "^5.5.1",
+    "@types/ssh2": "^1.15.5",
+    "@typescript-eslint/eslint-plugin": "^8.46.4",
+    "@typescript-eslint/parser": "^8.46.4",
+    "eslint": "^9.29.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-import": "^2.25.4",
     "firebase-functions-test": "^3.1.0",
