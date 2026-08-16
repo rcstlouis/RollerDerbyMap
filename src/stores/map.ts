@@ -16,6 +16,7 @@ export const useMapStore = defineStore('map', {
         useMap: true,
         activeRulesets: [] as RulesetName[],
       } as LeagueFilters,
+      selectedLeague: undefined as undefined | LeagueRecord,
       mapBounds: undefined as undefined | google.maps.LatLngBounds,
       mapFocus: undefined as undefined | { lat: number; lng: number } | google.maps.LatLng,
     }

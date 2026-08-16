@@ -1,35 +1,94 @@
 <script setup lang="ts">
 import mapboxgl, { TargetFeature, type GeoJSONFeature } from 'mapbox-gl'
 import 'mapbox-gl/dist/mapbox-gl.css'
-import { onMounted, ref } from 'vue'
-import rawLeagueData from '@/data/2026-08-15-leagues.data.json' with { type: 'json' }
-import { makeid } from '@/services/utils.service'
+import { onMounted, ref, watch } from 'vue'
 import { MapManager } from '@/model/maps.model'
 import { useMapStore } from '@/stores/map'
+import { storeToRefs } from 'pinia'
+import { makeid } from '@/services/utils.service'
+import type { LeagueRecord } from '@/model/league.model'
+import { useDisplay } from 'vuetify'
 
 mapboxgl.accessToken = import.meta.env.VITE_APP_MAPBOX_TOKEN
 
-const mapId = ref<string>('')
-const highlightedLeague = ref<string | undefined>(undefined)
+const mapId = ref<string>(makeid(6))
 const mapManager = ref<undefined | MapManager>(undefined)
+const { selectedLeague } = storeToRefs(useMapStore())
+const highlightedLeagueModel = ref<LeagueRecord | undefined>(undefined)
+const overlayModel = ref<boolean>(false)
+const height = ref<number>(600)
+const width = ref<number>(800)
+
+watch(
+  () => selectedLeague.value,
+  (newVal: LeagueRecord | undefined) => {
+    highlightedLeagueModel.value = selectedLeague.value
+    overlayModel.value = !!selectedLeague.value
+  },
+)
 
 onMounted(async () => {
-  mapManager.value = new MapManager(useMapStore().leagues)
-  // @ts-ignore
-  mapId.value = mapManager.value.getId()
-  // Delay to give the div a bit to set up
-  await new Promise((resolve, reject) => setTimeout(resolve, 500))
+  height.value = useDisplay().height.value * 0.8
+  width.value = useDisplay().width.value
+  mapManager.value = new MapManager(mapId.value, useMapStore().leagues)
   console.log('captured id: ', mapId.value)
+
+  // Let viewport size before map load
+  await new Promise((resolve, reject) => setTimeout(resolve, 500))
+  //@ts-ignore
   mapManager.value.initMap()
 })
 </script>
 
 <template>
-  <div>
-    <div :key="mapId" :id="'map-' + mapId" style="width: 800px; height: 600px"></div>
-    <v-card :key="mapId" :id="`map-${mapId}-info`">
-      Selected League: {{ highlightedLeague }}
-      <v-card-title>{{ highlightedLeague }}</v-card-title>
+  <v-sheet style="position: relative" rounded="0" color="black">
+    <div
+      :key="mapId"
+      :id="'map-' + mapId"
+      :style="{ height: height + 'px', width: width + 'px' }"
+    ></div>
+    <v-card
+      v-if="selectedLeague"
+      color="grey-darken-4"
+      class="pa-2"
+      style="position: absolute; top: 0; right: 0; opacity: 0.8; max-width: 60%"
+    >
+      <div class="d-flex justify-center">
+        <v-img
+          class="flex-grow-0"
+          :src="selectedLeague?.logo"
+          style="opacity: 1"
+          lazy-src="/logo.svg"
+          :width="100"
+          :max-height="100"
+        />
+      </div>
+      <h2>{{ selectedLeague.name }}</h2>
+      <p>{{ selectedLeague.city }}</p>
+      <p>{{ selectedLeague?.state }}</p>
+      <p>{{ selectedLeague.country }}</p>
+      <v-btn
+        v-if="selectedLeague.website"
+        style="padding-left: 8px; padding-right: 8px"
+        color="white"
+        variant="flat"
+        :href="selectedLeague.website"
+        append-icon="mdi-open-in-new"
+        target="_blank"
+      >
+        Website
+      </v-btn>
+      <v-btn
+        v-if="selectedLeague.wftdaWebsite"
+        style="padding-left: 8px; padding-right: 8px"
+        color="white"
+        variant="flat"
+        :href="selectedLeague.wftdaWebsite"
+        append-icon="mdi-open-in-new"
+        target="_blank"
+      >
+        WFTDA Page
+      </v-btn>
     </v-card>
-  </div>
+  </v-sheet>
 </template>

@@ -11,6 +11,7 @@ import { useMapStore } from '@/stores/map'
 export type RulesetName =
   | 'wftda'
   | 'mrda'
+  | 'jrda'
   | 'shortTrack'
   | 'chicagoClassic'
   | 'bankedTrack'
@@ -27,6 +28,7 @@ const RULESET_COLOR_DICT: { [key in RulesetName]: string } = {
   bankedTrack: '#5F6062',
   renegade: '#9c0000ff',
   independent: '#c800ffff',
+  jrda: '#524FA2',
 }
 
 export interface LeagueFilters {
@@ -44,8 +46,8 @@ export class MapManager {
   map: mapboxgl.Map | undefined
   selectedLeague: LeagueRecord | undefined
 
-  constructor(leagueRecords: LeagueRecord[]) {
-    this.id = makeid(6)
+  constructor(id: string, leagueRecords: LeagueRecord[]) {
+    this.id = id
     this.map = undefined
     this.leagueDict = {}
     this.selectedLeague = undefined
@@ -53,6 +55,7 @@ export class MapManager {
     const leaguesByRulesetDict: { [key in RulesetName]: LeagueRecord[] } = {
       wftda: [] as LeagueRecord[],
       mrda: [] as LeagueRecord[],
+      jrda: [] as LeagueRecord[],
       shortTrack: [] as LeagueRecord[],
       chicagoClassic: [] as LeagueRecord[],
       bankedTrack: [] as LeagueRecord[],
@@ -69,6 +72,7 @@ export class MapManager {
     this.geoJsonByRulesetDict = {
       wftda: this.leaguesToGeoJSON(leaguesByRulesetDict['wftda'], 'wftda'),
       mrda: this.leaguesToGeoJSON(leaguesByRulesetDict['mrda'], 'mrda'),
+      jrda: this.leaguesToGeoJSON(leaguesByRulesetDict['mrda'], 'mrda'),
       shortTrack: this.leaguesToGeoJSON(leaguesByRulesetDict['shortTrack'], 'shortTrack'),
       chicagoClassic: this.leaguesToGeoJSON(
         leaguesByRulesetDict['chicagoClassic'],
@@ -130,6 +134,7 @@ export class MapManager {
   setSelectedLeague(id: number | undefined) {
     if (id) this.selectedLeague = this.getLeagueById(id)
     else this.selectedLeague = undefined
+    useMapStore().selectedLeague = this.selectedLeague
   }
 
   initMap() {
@@ -197,9 +202,9 @@ export class MapManager {
         } as CircleLayerSpecification)
 
         // Clicking on a feature will highlight it and display its properties in the card
-        map.addInteraction(`${ruleset}-click`, {
+        map.addInteraction(`${ruleset}-circles-click`, {
           type: 'click',
-          target: { layerId: 'wftda-circles' },
+          target: { layerId: `${ruleset}-circles` },
           handler: ({ feature }) => {
             if (selectedFeature) {
               map.setFeatureState(selectedFeature, { selected: false })
@@ -207,15 +212,39 @@ export class MapManager {
               selectedFeature = feature
               map.setFeatureState(feature!, { selected: true })
             }
-            this.setSelectedLeague(feature?.properties?.id as number | undefined)
+            this.setSelectedLeague(feature?.id as number | undefined)
+            console.log('league: ', feature)
+          },
+        })
+        map.addInteraction(`${ruleset}-names-click`, {
+          type: 'click',
+          target: { layerId: `${ruleset}-names` },
+          handler: ({ feature }) => {
+            if (selectedFeature) {
+              map.setFeatureState(selectedFeature, { selected: false })
+            } else if (feature) {
+              selectedFeature = feature
+              map.setFeatureState(feature!, { selected: true })
+            }
+            this.setSelectedLeague(feature?.id as number | undefined)
             console.log('league: ', feature)
           },
         })
 
         // Hovering over a feature will highlight it
-        map.addInteraction(`${ruleset}-mouseenter`, {
+        map.addInteraction(`${ruleset}-circles-mouseenter`, {
           type: 'mouseenter',
-          target: { layerId: 'airport' },
+          target: { layerId: `${ruleset}-circles` },
+          handler: ({ feature }) => {
+            map.setFeatureState(feature!, { highlight: true })
+            map.getCanvas().style.cursor = 'pointer'
+          },
+        })
+
+        // Hovering over a feature will highlight it
+        map.addInteraction(`${ruleset}-names-mouseenter`, {
+          type: 'mouseenter',
+          target: { layerId: `${ruleset}-names` },
           handler: ({ feature }) => {
             map.setFeatureState(feature!, { highlight: true })
             map.getCanvas().style.cursor = 'pointer'
@@ -223,9 +252,20 @@ export class MapManager {
         })
 
         // Moving the mouse away from a feature will remove the highlight
-        map.addInteraction(`${ruleset}-mouseleave`, {
+        map.addInteraction(`${ruleset}-circles-mouseleave`, {
           type: 'mouseleave',
-          target: { layerId: 'airport' },
+          target: { layerId: `${ruleset}-circles` },
+          handler: ({ feature }) => {
+            map.setFeatureState(feature!, { highlight: false })
+            map.getCanvas().style.cursor = ''
+            return false
+          },
+        })
+
+        // Moving the mouse away from a feature will remove the highlight
+        map.addInteraction(`${ruleset}-names-mouseleave`, {
+          type: 'mouseleave',
+          target: { layerId: `${ruleset}-names` },
           handler: ({ feature }) => {
             map.setFeatureState(feature!, { highlight: false })
             map.getCanvas().style.cursor = ''

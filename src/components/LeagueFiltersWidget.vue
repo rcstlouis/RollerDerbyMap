@@ -42,15 +42,12 @@ onMounted(() => {
 
 <template>
   <div color="black">
-    <v-alert class="mt-2" color="secondary">
-      The map is very slow to load right now; please give it a minute.
-    </v-alert>
-    <h1>Map Controls</h1>
-    <!-- <gmpx-place-picker
+    <!-- <h1>Map Controls</h1>
+    <gmpx-place-picker
       placeholder="Center Map On"
       id="place-picker"
       style="width: 100%"
-    ></gmpx-place-picker> -->
+    ></gmpx-place-picker>
 
     <h1>Filters</h1>
     <v-select
@@ -79,6 +76,6 @@ onMounted(() => {
       prepend-icon="mdi-map"
       class="mt-1"
       @update:model-value="syncFilterState"
-    ></v-switch>
+    ></v-switch> -->
   </div>
 </template>

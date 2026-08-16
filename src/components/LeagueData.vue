@@ -47,7 +47,7 @@ const leagueColorDict: { [leagueName: string]: string } = {
             </v-btn>
           </div>
           <v-chip
-            v-for="league of leagueRecord?.leagues ?? []"
+            v-for="league of leagueRecord?.rulesets ?? []"
             :key="league"
             :color="leagueColorDict[league] ?? 'grey'"
           >
