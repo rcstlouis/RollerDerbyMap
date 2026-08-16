@@ -11,63 +11,113 @@ const drawerIsOpen = ref(false)
 const userStore = useUserStore()
 // const { smAndUp } = useDisplay()
 
-watch(() => userStore.user, newVal => {
-
-  if (!newVal) {
-    if (router.currentRoute.value.fullPath === '/')
-      window.location.reload()
-    else router.push({ path: '/' })
-  }
-})
+watch(
+  () => userStore.user,
+  (newVal) => {
+    if (!newVal) {
+      if (router.currentRoute.value.fullPath === '/') window.location.reload()
+      else router.push({ path: '/' })
+    }
+  },
+)
 </script>
 
 <template>
   <v-app class="ma-0 pa-0">
-    <v-app-bar v-if="route.path !== '/linktree' && route.path !== '/linktree/'" color="primary" class="px-2"
-      :scroll-behavior="route.path === '/' || route.path.includes('join') ? 'fade-image inverted' : 'inverted'
-        " :image="route.path.includes('join')
+    <v-app-bar
+      v-if="route.path !== '/linktree' && route.path !== '/linktree/'"
+      color="primary"
+      class="px-2"
+      :scroll-behavior="
+        route.path === '/' || route.path.includes('join') ? 'fade-image inverted' : 'inverted'
+      "
+      :image="
+        route.path.includes('join')
           ? '/promoImg/bootcamp.jpeg'
           : `/Bubbs_action_bw_cropped_banner.png`
-          ">
+      "
+    >
       <template v-slot:prepend>
         <v-app-bar-nav-icon>
-          <v-btn icon="mdi-menu" color="primary" variant="flat" class="rounded-lg"
-            @click.stop="drawerIsOpen = !drawerIsOpen"></v-btn>
+          <v-btn
+            icon="mdi-menu"
+            color="primary"
+            variant="flat"
+            class="rounded-lg"
+            @click.stop="drawerIsOpen = !drawerIsOpen"
+          ></v-btn>
         </v-app-bar-nav-icon>
       </template>
 
       <template v-slot:append>
         <v-menu v-if="userStore.user">
           <template v-slot:activator="{ props }">
-            <v-btn color="secondary" v-bind="props" variant="flat" icon="mdi-account">
-            </v-btn>
+            <v-btn color="secondary" v-bind="props" variant="flat" icon="mdi-account"> </v-btn>
           </template>
           <v-list>
             <v-list-item @click="userStore.signout()">
-              <v-list-item-title>
-                Sign Out <v-icon>mdi-door</v-icon>
-              </v-list-item-title>
+              <v-list-item-title> Sign Out <v-icon>mdi-door</v-icon> </v-list-item-title>
             </v-list-item>
           </v-list>
         </v-menu>
-        <img v-else alt="BSB logo" class="logo" src="@/assets/logo.svg" width="60" height="60"
-          @click="router.push({ path: '/' })" />
+        <img
+          v-else
+          alt="BSB logo"
+          class="logo"
+          src="@/assets/logo.svg"
+          width="60"
+          height="60"
+          @click="router.push({ path: '/' })"
+        />
       </template>
     </v-app-bar>
-    <v-navigation-drawer color="purple-lighten-2" location="start" name="drawer" v-model="drawerIsOpen" temporary>
+    <v-navigation-drawer
+      color="purple-lighten-2"
+      location="start"
+      name="drawer"
+      v-model="drawerIsOpen"
+      temporary
+    >
       <v-list-item title="Derby Phone Book" class="font-style-bold mt-2" temporary></v-list-item>
       <v-divider color="white" thickness="1" class="border-opacity-75" />
       <v-list-item link title="Map" prepend-icon="mdi-map" to="/"></v-list-item>
-      <v-list-item link title="Events" prepend-icon="mdi-calendar" to="/events"></v-list-item>
-      <v-list-item link title="Leagues" prepend-icon="mdi-format-list-text" to="/leagues"></v-list-item>
+      <!-- <v-list-item link title="Events" prepend-icon="mdi-calendar" to="/events"></v-list-item> -->
+      <v-list-item
+        link
+        title="Leagues"
+        prepend-icon="mdi-format-list-text"
+        to="/leagues"
+      ></v-list-item>
       <v-list-item link title="Contact" prepend-icon="mdi-email" to="/contact"></v-list-item>
-      <v-list-item link title="Donate/About" prepend-icon="mdi-heart" to="/about"></v-list-item>
+      <!-- <v-list-item link title="Donate/About" prepend-icon="mdi-heart" to="/about"></v-list-item> -->
       <v-divider color="white" thickness="1" class="border-opacity-75 mx-4" />
-      <v-list-item v-if="!userStore.user" link title="Sign In" prepend-icon="mdi-account" to="/signin"></v-list-item>
-      <v-list-item v-if="userStore.user" link title="Manage" prepend-icon="mdi-pencil" to="/manage" color="secondary"
-        variant="flat" active-color="secondary"></v-list-item>
-      <v-list-item v-if="userStore.user" link title="Contribute" prepend-icon="mdi-plus" to="/contribute"
-        color="secondary" variant="flat" active-color="secondary"></v-list-item>
+      <v-list-item
+        v-if="!userStore.user"
+        link
+        title="Sign In"
+        prepend-icon="mdi-account"
+        to="/signin"
+      ></v-list-item>
+      <v-list-item
+        v-if="userStore.user"
+        link
+        title="Manage"
+        prepend-icon="mdi-pencil"
+        to="/manage"
+        color="secondary"
+        variant="flat"
+        active-color="secondary"
+      ></v-list-item>
+      <v-list-item
+        v-if="userStore.user"
+        link
+        title="Contribute"
+        prepend-icon="mdi-plus"
+        to="/contribute"
+        color="secondary"
+        variant="flat"
+        active-color="secondary"
+      ></v-list-item>
     </v-navigation-drawer>
     <v-main>
       <div class="d-flex flex-column flex-grow" style="height: 100%">
@@ -75,8 +125,13 @@ watch(() => userStore.user, newVal => {
         <v-sheet color="black" style="height: 100%"></v-sheet>
       </div>
     </v-main>
-    <v-footer v-if="route.path !== '/linktree' && route.path !== '/linktree/'" :app="false" color="grey-darken-2"
-      class="d-flex flex-column py-0" style="max-height: 230px">
+    <v-footer
+      v-if="route.path !== '/linktree' && route.path !== '/linktree/'"
+      :app="false"
+      color="grey-darken-2"
+      class="d-flex flex-column py-0"
+      style="max-height: 230px"
+    >
       <div class="d-flex align-center">
         <v-spacer />
         <span>Connect with us!</span>
