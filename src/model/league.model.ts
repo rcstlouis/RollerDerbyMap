@@ -1,7 +1,9 @@
 // import type { Coord } from './maps.model'
 
+import type { RulesetName } from './maps.model'
+
 export interface LeagueRecord {
-  id?: string
+  id?: number
   name: string
 
   country: string
@@ -12,7 +14,7 @@ export interface LeagueRecord {
   lng: number
 
   logo?: string
-  leagues: ('WFTDA' | 'MRDA' | 'JRDA' | 'Short Track')[]
+  rulesets: RulesetName[]
   website?: string
   wftdaWebsite?: string
   lastActive?: Date

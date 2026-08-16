@@ -11,6 +11,7 @@ import * as directives from 'vuetify/directives'
 
 import '@mdi/font/css/materialdesignicons.css'
 import { aliases, mdi } from 'vuetify/iconsets/mdi'
+import piniaPersistedState from 'pinia-plugin-persistedstate'
 
 const vuetify = createVuetify({
   components,
@@ -48,8 +49,9 @@ import App from './App.vue'
 import router from './router'
 
 const app = createApp(App)
-
-app.use(createPinia())
+const pinia = createPinia()
+pinia.use(piniaPersistedState)
+app.use(pinia)
 app.use(router)
 app.use(vuetify)
 

@@ -4,11 +4,10 @@ import type { LeagueRecord } from '@/model/league.model'
 import type { LeagueFilters, RulesetName } from '@/model/maps.model'
 import offlineLeagueData from '@/data/leagues.data.json' with { type: 'json' }
 
-export const useDataStore = defineStore('data', {
+export const useDataStore = defineStore('map', {
   persist: true,
   state: () => {
     return {
-      // events: [] as BSBEvent[],
       leagues: offlineLeagueData as unknown as LeagueRecord[],
       example: undefined as unknown,
       tags: [] as string[],
@@ -17,8 +16,8 @@ export const useDataStore = defineStore('data', {
         searchString: '',
         useMap: true,
       } as LeagueFilters,
-      mapBounds: undefined as undefined | google.maps.LatLngBounds,
-      mapFocus: undefined as undefined | { lat: number; lng: number } | google.maps.LatLng,
+      mapBounds: undefined as undefined,
+      mapFocus: undefined as undefined | { lat: number; lng: number },
     }
   },
   actions: {
@@ -33,7 +32,7 @@ export const useDataStore = defineStore('data', {
         if (typeof lr.leagues === 'string') {
           rulesets = JSON.parse(lr.rulesets) as RulesetName[]
         }
-        parsedRecord.rulesets = rulesets as RulesetName[]
+        parsedRecord.rulesets = rulesets
         return parsedRecord
       }) as LeagueRecord[]
       this.leagues = l
