@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { GoogleMap, CustomMarker, MarkerCluster } from 'vue3-google-map'
+// import { GoogleMap, CustomMarker, MarkerCluster } from 'vue3-google-map'
 import { onMounted, reactive, ref, watch } from 'vue'
 import { MapManager } from '@/model/maps.model'
 import { makeid } from '@/services/utils.service'
@@ -56,6 +56,7 @@ watch(
 watch(
   () => leagues.value,
   (newVal: LeagueRecord[]) => {
+    // @ts-ignore
     mapState.manager = new MapManager(newVal)
   },
 )

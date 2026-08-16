@@ -1,10 +1,10 @@
-<script setup lang="ts">
+<template></template>
+<!-- <script setup lang="ts">
 import type { LeagueRecord } from '@/model/league.model';
 import LeagueData from './LeagueData.vue';
 import { type PropType, defineProps, onMounted, reactive, defineEmits, computed } from 'vue';
 import { useVuelidate } from '@vuelidate/core'
 import { required, url, helpers } from '@vuelidate/validators'
-import { VFileUpload } from 'vuetify/labs/VFileUpload'
 import type { FirebaseError } from 'firebase/app';
 import { useDataStore } from '@/stores/data';
 import { DataSyncRequestBody } from '@/model/dataSync.model';
@@ -256,4 +256,4 @@ onMounted(() => {
       </v-card-text>
     </v-card>
   </div>
-</template>
+</template> -->

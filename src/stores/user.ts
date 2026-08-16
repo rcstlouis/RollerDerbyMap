@@ -4,8 +4,8 @@ import { signInWithEmailAndPassword, signOut, type User, type UserCredential } f
 import { useLocalStorage } from '@vueuse/core'
 import type { RegisterUserRequestBody } from '@/model/dataSync.model'
 
-export const useUserStore = defineStore({
-  id: 'user',
+export const useUserStore = defineStore('user', {
+  persist: true,
   state: () => {
     return {
       user: useLocalStorage<User | undefined>('user:auth', undefined),

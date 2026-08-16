@@ -5,7 +5,8 @@ import mapboxgl, {
   type CircleLayerSpecification,
   type SymbolLayerSpecification,
 } from 'mapbox-gl'
-// import { type GeoJSON, type Geometry, type GeoJsonProperties, type Feature } from 'geojson'
+import type { GeoJSON, Geometry, GeoJsonProperties, Feature } from 'geojson'
+import { useMapStore } from '@/stores/map'
 
 export type RulesetName =
   | 'wftda'
@@ -38,7 +39,7 @@ export class MapManager {
   id: string
   leagueDict: { [leagueId: number]: LeagueRecord }
   geoJsonByRulesetDict: {
-    [key in RulesetName]: unknown //GeoJSON<Geometry, GeoJsonProperties>
+    [key in RulesetName]: GeoJSON<Geometry, GeoJsonProperties>
   }
   map: mapboxgl.Map | undefined
   selectedLeague: LeagueRecord | undefined
@@ -96,10 +97,8 @@ export class MapManager {
   private leaguesToGeoJSON(
     leagueRecords: LeagueRecord[],
     ruleset: RulesetName,
-  ): { [key: string]: string } /*GeoJSON<Geometry, GeoJsonProperties>*/ {
-    const features: /*Feature<Geometry, GeoJsonProperties>[]*/ {
-      [key: string]: string | number | undefined | unknown
-    }[] = []
+  ): GeoJSON<Geometry, GeoJsonProperties> {
+    const features: Feature<Geometry, GeoJsonProperties>[] = []
     for (const league of leagueRecords) {
       features.push({
         id: league.id,
@@ -109,7 +108,7 @@ export class MapManager {
         },
         type: 'Feature',
         properties: {
-          description: `${league.name} (${league.lat}, ${league.lng})`,
+          description: `${league.name}`,
           'marker-symbol': 'marker',
           'marker-color': RULESET_COLOR_DICT[ruleset],
           'marker-size': 'medium',
@@ -120,7 +119,7 @@ export class MapManager {
     }
     return {
       type: 'FeatureCollection',
-      features: features as unknown as string,
+      features,
     }
   }
 
@@ -148,14 +147,17 @@ export class MapManager {
         },
       },
     })
-    // map.on('idle', () => {
-    // console.log('map bounds: ', this.getMapBounds())
-    // })
+    map.on('idle', () => {
+      const bounds = this.getMapBounds()
+      console.log('map bounds: ', bounds)
+      useMapStore().mapBounds = bounds
+    })
     map.on('load', () => {
+      let selectedFeature: TargetFeature | undefined = undefined
       for (const ruleset in this.geoJsonByRulesetDict) {
         map.addSource(`${ruleset}-leagues`, {
           type: 'geojson',
-          data: this.geoJsonByRulesetDict[ruleset as RulesetName] as string,
+          data: this.geoJsonByRulesetDict[ruleset as RulesetName],
         })
         map.addLayer({
           id: `${ruleset}-names`,
@@ -194,10 +196,8 @@ export class MapManager {
           },
         } as CircleLayerSpecification)
 
-        let selectedFeature: TargetFeature | undefined = undefined
-
         // Clicking on a feature will highlight it and display its properties in the card
-        map.addInteraction('click', {
+        map.addInteraction(`${ruleset}-click`, {
           type: 'click',
           target: { layerId: 'wftda-circles' },
           handler: ({ feature }) => {
@@ -207,26 +207,13 @@ export class MapManager {
               selectedFeature = feature
               map.setFeatureState(feature!, { selected: true })
             }
-
             this.setSelectedLeague(feature?.properties?.id as number | undefined)
             console.log('league: ', feature)
           },
         })
 
-        // Clicking on the map will deselect the selected feature
-        map.addInteraction('map-click', {
-          type: 'click',
-          handler: () => {
-            if (selectedFeature) {
-              map.setFeatureState(selectedFeature, { selected: false })
-              selectedFeature = undefined
-              this.setSelectedLeague(undefined)
-            }
-          },
-        })
-
         // Hovering over a feature will highlight it
-        map.addInteraction('mouseenter', {
+        map.addInteraction(`${ruleset}-mouseenter`, {
           type: 'mouseenter',
           target: { layerId: 'airport' },
           handler: ({ feature }) => {
@@ -236,7 +223,7 @@ export class MapManager {
         })
 
         // Moving the mouse away from a feature will remove the highlight
-        map.addInteraction('mouseleave', {
+        map.addInteraction(`${ruleset}-mouseleave`, {
           type: 'mouseleave',
           target: { layerId: 'airport' },
           handler: ({ feature }) => {
@@ -246,19 +233,32 @@ export class MapManager {
           },
         })
       }
+
+      // Interactions that only need to be set once
+      // Clicking on the map will deselect the selected feature
+      map.addInteraction('map-click', {
+        type: 'click',
+        handler: () => {
+          if (selectedFeature) {
+            map.setFeatureState(selectedFeature, { selected: false })
+            selectedFeature = undefined
+            this.setSelectedLeague(undefined)
+          }
+        },
+      })
     })
   }
 
-  // getMapBounds(): undefined | google.maps.LatLngBounds {
-  //   if (!this.map) return undefined
-  //   const canvas = this.map.getCanvas()
-  //   const w = canvas.width
-  //   const h = canvas.height
-  //   // const cUL = this.map.unproject([0, 0]).toArray()
-  //   const cUR = this.map.unproject([w, 0]).toArray()
-  //   // const cLR = this.map.unproject([w, h]).toArray()
-  //   const cLL = this.map.unproject([0, h]).toArray()
-  //   return new google.maps.LatLngBounds({ lat: cLL[1], lng: cLL[0] }, { lat: cUR[1], lng: cUR[0] })
-  //   // return [cUL, cUR, cLR, cLL, cUL] // coordinates
-  // }
+  getMapBounds(): undefined | google.maps.LatLngBounds {
+    if (!this.map) return undefined
+    const canvas = this.map.getCanvas()
+    const w = canvas.width
+    const h = canvas.height
+    // const cUL = this.map.unproject([0, 0]).toArray()
+    const cUR = this.map.unproject([w, 0]).toArray()
+    // const cLR = this.map.unproject([w, h]).toArray()
+    const cLL = this.map.unproject([0, h]).toArray()
+    return new google.maps.LatLngBounds({ lat: cLL[1], lng: cLL[0] }, { lat: cUR[1], lng: cUR[0] })
+    // return [cUL, cUR, cLR, cLL, cUL] // coordinates
+  }
 }
