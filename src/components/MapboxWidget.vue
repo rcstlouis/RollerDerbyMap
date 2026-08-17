@@ -2,7 +2,7 @@
 import mapboxgl, { TargetFeature, type GeoJSONFeature } from 'mapbox-gl'
 import 'mapbox-gl/dist/mapbox-gl.css'
 import { onMounted, ref, watch } from 'vue'
-import { MapManager } from '@/model/maps.model'
+import { MapManager, RULESET_COLOR_DICT, RULESET_NAME_DICT } from '@/model/maps.model'
 import { useMapStore } from '@/stores/map'
 import { storeToRefs } from 'pinia'
 import { makeid } from '@/services/utils.service'
@@ -53,7 +53,7 @@ onMounted(async () => {
       class="pa-2"
       style="position: absolute; top: 0; right: 0; opacity: 0.8; max-width: 60%"
     >
-      <div class="d-flex justify-center">
+      <v-sheet class="d-flex justify-center" color="white">
         <v-img
           class="flex-grow-0"
           :src="selectedLeague?.logo"
@@ -62,11 +62,20 @@ onMounted(async () => {
           :width="100"
           :max-height="100"
         />
-      </div>
+      </v-sheet>
       <h2>{{ selectedLeague.name }}</h2>
       <p>{{ selectedLeague.city }}</p>
       <p>{{ selectedLeague?.state }}</p>
       <p>{{ selectedLeague.country }}</p>
+      <div class="d-flex">
+        <v-chip
+          v-for="ruleset of selectedLeague?.rulesets ?? []"
+          :key="ruleset"
+          :color="RULESET_COLOR_DICT[ruleset] ?? 'grey'"
+        >
+          {{ RULESET_NAME_DICT[ruleset] ?? ruleset }}
+        </v-chip>
+      </div>
       <v-btn
         v-if="selectedLeague.website"
         style="padding-left: 8px; padding-right: 8px"

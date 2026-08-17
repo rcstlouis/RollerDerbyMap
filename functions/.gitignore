@@ -10,3 +10,4 @@ node_modules/
 
 admin.json
 *.env*
+*download.html

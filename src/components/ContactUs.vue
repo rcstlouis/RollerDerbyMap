@@ -1,22 +1,22 @@
 <script setup lang="ts">
 import type { ContactUsConfig } from '@/model/contact.model'
 import { firebaseCloudFunction } from '@/services/firebase.service'
-import { ref, defineProps, reactive } from 'vue'
+import { ref, reactive } from 'vue'
 import { useVuelidate } from '@vuelidate/core'
 import { required, email } from '@vuelidate/validators'
 
 const props = defineProps({
-  hasFormOnly: Boolean
+  hasFormOnly: Boolean,
 })
 const state = reactive({
   name: '',
   email: '',
-  message: ''
+  message: '',
 })
 const rules = {
   name: { required },
   email: { required, email },
-  message: { required }
+  message: { required },
 }
 const v$ = useVuelidate(rules, state)
 
@@ -24,8 +24,7 @@ const formStatus = ref<'ready' | 'sending' | 'error' | 'success'>('ready')
 const formId = ref<number>(1)
 const formRef = ref<unknown>(null)
 
-const emailDict = {
-} as { [emailName: string]: { email: string; tag: string } }
+const emailDict = {} as { [emailName: string]: { email: string; tag: string } }
 
 function sendMessage() {
   v$.value.$validate()
@@ -41,7 +40,7 @@ function sendMessage() {
     body: state.message,
     firstName: state.name,
     lastName: '',
-    subject: `Message from ${state.name}`
+    subject: `Message from ${state.name}`,
   } as ContactUsConfig)
     .then((result) => {
       console.log(`Message sent! ${JSON.stringify(result)}`)
@@ -70,21 +69,47 @@ function resetForm() {
   <div class="d-flex flex-column">
     <h2 v-if="!hasFormOnly" class="mb-1">Drop Us A Line!</h2>
     <v-form ref="formRef" @submit.prevent="sendMessage" :key="formId">
-      <div class="d-flex flex-column">
-        <v-text-field class="mb-4" label="Name*" v-model="v$.name.$model" variant="outlined"
-          :disabled="formStatus === 'sending' || formStatus === 'success'" validate-on="blur"
-          :error="!!v$.name.$errors?.length" :error-messages="v$.name.$errors.map((e) => e.$message as string)"
-          hide-details="auto"></v-text-field>
-        <v-text-field class="mb-4" label="Email*" v-model="v$.email.$model" variant="outlined"
-          :disabled="formStatus === 'sending' || formStatus === 'success'" validate-on="blur"
-          :error="!!v$.email.$errors?.length" :error-messages="v$.email.$errors.map((e) => e.$message as string)"
-          hide-details="auto"></v-text-field>
-        <v-textarea class="mb-4" label="Message*" v-model="v$.message.$model" variant="outlined"
-          :disabled="formStatus === 'sending' || formStatus === 'success'" validate-on="blur"
-          :error="!!v$.message.$errors?.length" :error-messages="v$.message.$errors.map((e) => e.$message as string)"
-          hide-details="auto"></v-textarea>
-        <v-btn block append-icon="mdi-send" color="primary" type="submit"
-          :disabled="v$.$invalid || formStatus === 'sending' || formStatus === 'success'">
+      <div class="d-flex flex-column" style="row-gap: 8px">
+        <v-text-field
+          class="mb-4"
+          label="Name*"
+          v-model="v$.name.$model"
+          variant="outlined"
+          :disabled="formStatus === 'sending' || formStatus === 'success'"
+          validate-on="blur"
+          :error="!!v$.name.$errors?.length"
+          :error-messages="v$.name.$errors.map((e) => e.$message as string)"
+          hide-details="auto"
+        ></v-text-field>
+        <v-text-field
+          class="mb-4"
+          label="Email*"
+          v-model="v$.email.$model"
+          variant="outlined"
+          :disabled="formStatus === 'sending' || formStatus === 'success'"
+          validate-on="blur"
+          :error="!!v$.email.$errors?.length"
+          :error-messages="v$.email.$errors.map((e) => e.$message as string)"
+          hide-details="auto"
+        ></v-text-field>
+        <v-textarea
+          class="mb-4"
+          label="Message*"
+          v-model="v$.message.$model"
+          variant="outlined"
+          :disabled="formStatus === 'sending' || formStatus === 'success'"
+          validate-on="blur"
+          :error="!!v$.message.$errors?.length"
+          :error-messages="v$.message.$errors.map((e) => e.$message as string)"
+          hide-details="auto"
+        ></v-textarea>
+        <v-btn
+          block
+          append-icon="mdi-send"
+          color="primary"
+          type="submit"
+          :disabled="v$.$invalid || formStatus === 'sending' || formStatus === 'success'"
+        >
           Send
         </v-btn>
       </div>
@@ -97,7 +122,13 @@ function resetForm() {
         <v-spacer />
       </div>
       <p class="w-100" style="text-align: center">If this persists, try emailing us:</p>
-      <v-btn href="mailto:info@baystatebrawlers.com" append-icon="mdi-send" block class="mt-2" color="black">
+      <v-btn
+        href="mailto:info@baystatebrawlers.com"
+        append-icon="mdi-send"
+        block
+        class="mt-2"
+        color="black"
+      >
         info@baystatebrawlers.com
       </v-btn>
     </v-alert>

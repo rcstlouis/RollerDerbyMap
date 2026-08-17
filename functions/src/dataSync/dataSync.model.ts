@@ -1,7 +1,8 @@
 import { Timestamp } from 'firebase-admin/firestore'
 import { makeFirestoreId } from '../utils.js'
 import { UserRecord } from 'firebase-admin/auth'
-import { ContactUsConfig } from '../contact/contact.model'
+import { ContactUsConfig } from '../contact/contact.model.js'
+import { LeagueRecord } from '../model/league.model.js'
 
 export interface DataSyncRequestBody {
   docId?: string
@@ -15,23 +16,6 @@ export interface DataSyncRequestBody {
     signsOfActivity: string
     notes: string
   }
-}
-
-export interface LeagueRecord {
-  name: string
-  id: string
-
-  country: string
-  state: string | null
-  city: string
-  loc: Coord
-
-  logo: string | null
-  leagues: ('WFTDA' | 'MRDA' | 'JRDA' | 'Short Track')[]
-  website: string | null
-  wftdaWebsite: string | null
-  lastActive: Date | null
-  tags: string[]
 }
 
 export interface Coord {
@@ -114,7 +98,7 @@ export class UserContribution {
   id: string
   userId: string | null
   status: 'pending' | 'approved' | 'rejected'
-  leagueData: LeagueRecord | null
+  // leagueData: LeagueRecord | null
   contributionData: {
     type: 'newLeague'
     leagueRelation: string | null
@@ -126,22 +110,24 @@ export class UserContribution {
     this.id = makeFirestoreId()
     this.userId = body.userId ?? null
     this.status = 'pending'
-    this.leagueData = body.leagueData?.name
-      ? {
-          name: body.leagueData?.name,
-          id: body.leagueData.id ?? makeFirestoreId(),
-          country: body.leagueData.country ?? null,
-          state: body.leagueData.state ?? null,
-          city: body.leagueData.city ?? null,
-          loc: body.leagueData.loc ?? null,
-          logo: body.leagueData.logo ?? null,
-          leagues: body.leagueData.leagues ?? null,
-          website: body.leagueData.website ?? null,
-          wftdaWebsite: body.leagueData.wftdaWebsite ?? null,
-          lastActive: body.leagueData.lastActive ?? null,
-          tags: body.leagueData.tags ?? null,
-        }
-      : null
+    // this.leagueData = body.leagueData?.name
+    //   ? {
+    //       name: body.leagueData?.name,
+    //       id: body.leagueData.id ?? 1,
+    //       country: body.leagueData.country ?? '',
+    //       state: body.leagueData.state ?? '',
+    //       city: body.leagueData.city ?? '',
+    //       logo: body.leagueData.logo ?? '',
+    //       // leagues: body.leagueData.leagues ?? '',
+    //       lat: 0,
+    //       lng: 0,
+    //       rulesets: [],
+    //       website: body.leagueData.website ?? '',
+    //       wftdaWebsite: body.leagueData.wftdaWebsite ?? '',
+    //       lastActive: body.leagueData.lastActive ?? '',
+    //       tags: body.leagueData.tags ?? '',
+    //     }
+    //   : null
     this.contributionData = {
       type: 'newLeague',
       leagueRelation: body.contribute?.leagueRelation ?? null,

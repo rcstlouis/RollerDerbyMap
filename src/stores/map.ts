@@ -2,7 +2,7 @@ import { defineStore } from 'pinia'
 import { supabase } from '@/services/supabaseClient.service'
 import type { LeagueRecord } from '@/model/league.model'
 import type { LeagueFilters, RulesetName } from '@/model/maps.model'
-import offlineLeagueData from '@/data/2026-08-15-leagues.data.json' with { type: 'json' }
+import offlineLeagueData from '@/data/2026-08-16-leagues.data.json' with { type: 'json' }
 
 export const useMapStore = defineStore('map', {
   persist: false,

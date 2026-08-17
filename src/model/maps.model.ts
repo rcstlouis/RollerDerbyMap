@@ -20,7 +20,7 @@ export type RulesetName =
 
 // https://bobbyhadz.com/blog/typescript-index-signature-parameter-cannot-be-union-type
 
-const RULESET_COLOR_DICT: { [key in RulesetName]: string } = {
+export const RULESET_COLOR_DICT: { [key in RulesetName]: string } = {
   wftda: '#F6A2C6',
   mrda: '#B7E3F6',
   shortTrack: '#00B5E1',
@@ -29,6 +29,17 @@ const RULESET_COLOR_DICT: { [key in RulesetName]: string } = {
   renegade: '#9c0000ff',
   independent: '#c800ffff',
   jrda: '#524FA2',
+}
+
+export const RULESET_NAME_DICT: { [key in RulesetName]: string } = {
+  wftda: 'WFTDA',
+  mrda: 'MRDA',
+  shortTrack: 'Short Track',
+  chicagoClassic: 'Chicago Classic',
+  bankedTrack: 'Banked Track',
+  renegade: 'Renegade',
+  independent: 'Independent',
+  jrda: 'JRDA',
 }
 
 export interface LeagueFilters {
@@ -64,9 +75,8 @@ export class MapManager {
     }
     for (const record of leagueRecords ?? []) {
       this.leagueDict[record.id!] = record
-      for (const ruleset of record?.rulesets ?? []) {
-        leaguesByRulesetDict[ruleset].push(record)
-      }
+      for (const ruleset of record?.rulesets ?? [])
+        if (leaguesByRulesetDict[ruleset]) leaguesByRulesetDict[ruleset].push(record)
     }
 
     this.geoJsonByRulesetDict = {
