@@ -13,6 +13,7 @@ export class MultipleLeagueMergeManager {
 
   baseDatasetName: string
   incomingDatasetName: string
+  initialMergeStrategy?: MergeStrategy
 
   singleLeagueMergeManagerDict: { [baseLeagueName: string]: SingleLeagueMergeManager }
 
@@ -42,7 +43,7 @@ export class MultipleLeagueMergeManager {
       lng: 'base',
       logo: 'base',
       rulesets: 'merge',
-      website: 'base',
+      website: 'incoming',
       wftdaWebsite: 'base',
       lastActive: 'merge',
       tags: 'merge',
@@ -113,6 +114,7 @@ export class MultipleLeagueMergeManager {
       throw `Duplicate name found in base leagues (${this.baseDatasetName}): ${JSON.stringify(duplicates)}`
     }
 
+    this.initialMergeStrategy = options?.mergeStrategy
     if (options.mergeStrategy) this.applyMergeStrategy(options.mergeStrategy)
   }
 
@@ -138,8 +140,7 @@ export class MultipleLeagueMergeManager {
   applyMergeStrategy(strategy: MergeStrategy) {
     if (strategy === 'stringSimilarityUSA_WFTDA') {
       for (const baseLeague of Object.values(this.baseLeaguesDict)) {
-        if (baseLeague.country !== 'United States') continue
-        if (!baseLeague.wftdaWebsite) continue
+        if (!this.singleLeagueMergeManagerDict[baseLeague.name].baseIsMergeCandidate()) continue
 
         const matchCandidates = StrCompare.diceCoefficient.sortMatch(
           baseLeague.name,
@@ -150,6 +151,16 @@ export class MultipleLeagueMergeManager {
           this.incomingLeaguesDict[matchCandidates[matchCandidates.length - 1].member],
         )
       }
+    }
+  }
+
+  getFinalizedMergeData(): MultipleLeagueMergeData {
+    return {
+      baseLeagues: Object.values(this.baseLeaguesDict),
+      incomingLeagues: Object.values(this.incomingLeaguesDict),
+      defaultMergePattern: this.defaultMergePattern,
+      mergeInstructions: Object.values(this.mergeInstructionsDict),
+      mergeResult: Object.values(this.singleLeagueMergeManagerDict).map((m) => m.getMergedLeague()),
     }
   }
 }
@@ -174,13 +185,18 @@ export class SingleLeagueMergeManager {
     this.mergePatternOverrides = mergePatternOverride
   }
 
-  mergeBaseWith(incoming: LeagueRecord) {
-    this.manager.removeMergeData(this.getMergeData()) // Redundancy
-    this.incoming = incoming
-    this.manager.incorporateMergeData(this.getMergeData()!)
+  mergeBaseWith(incoming?: LeagueRecord) {
+    if (incoming) {
+      this.manager.removeMergeData(this.getMergeData()) // Redundancy
+      this.incoming = incoming
+      this.manager.incorporateMergeData(this.getMergeData()!)
+    } else {
+      this.abortMerge()
+    }
   }
 
   abortMerge() {
+    this.manager.removeMergeData(this.getMergeData())
     delete this.incoming
     delete this.mergePatternOverrides
   }
@@ -194,8 +210,51 @@ export class SingleLeagueMergeManager {
     }
   }
 
+  setPatternItem(
+    attribute:
+      | 'id'
+      | 'name'
+      | 'country'
+      | 'state'
+      | 'city'
+      | 'lat'
+      | 'lng'
+      | 'logo'
+      | 'rulesets'
+      | 'website'
+      | 'wftdaWebsite'
+      | 'lastActive'
+      | 'tags',
+    pattern: LeagueMergePatternItem,
+  ) {
+    if (!this.mergePatternOverrides) this.mergePatternOverrides = {}
+    this.mergePatternOverrides[attribute] = pattern
+    if (pattern === this.mergePatternDefault[attribute])
+      delete this.mergePatternOverrides[attribute]
+    if (!Object.keys(this.mergePatternOverrides)) delete this.mergePatternOverrides
+  }
+
   setMergePatternOverrides(pattern: LeagueMergePattern) {
     this.mergePatternOverrides = pattern
+  }
+
+  getPatternItem(
+    key:
+      | 'id'
+      | 'name'
+      | 'country'
+      | 'state'
+      | 'city'
+      | 'lat'
+      | 'lng'
+      | 'logo'
+      | 'rulesets'
+      | 'website'
+      | 'wftdaWebsite'
+      | 'lastActive'
+      | 'tags',
+  ): LeagueMergePatternItem | undefined {
+    return this.mergePatternOverrides?.[key] ?? this.mergePatternDefault[key]
   }
 
   getMergedLeague(): LeagueRecord {
@@ -289,6 +348,12 @@ export class SingleLeagueMergeManager {
       this.mergePatternDefault?.lastActive === 'incoming'
     )
       lastActive = this.incoming?.lastActive
+    else if (this.getPatternItem('lastActive') === 'merge') {
+      lastActive =
+        (this.base.lastActive?.getTime() ?? 0) > (this.incoming?.lastActive?.getTime() ?? 0)
+          ? this.base.lastActive
+          : this.incoming?.lastActive
+    }
 
     let tags: string[] = []
     if (this.mergePatternOverrides?.tags ?? this.mergePatternDefault?.tags === 'base')
@@ -326,6 +391,13 @@ export class SingleLeagueMergeManager {
     if (!mergedLeagueRecord.tags?.length) delete mergedLeagueRecord.tags
 
     return mergedLeagueRecord
+  }
+
+  baseIsMergeCandidate(): boolean {
+    if (this.manager.initialMergeStrategy === 'stringSimilarityUSA_WFTDA')
+      return this.base.country === 'United States' && !!this.base.wftdaWebsite
+
+    return true
   }
 }
 
