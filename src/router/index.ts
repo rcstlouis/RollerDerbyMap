@@ -13,6 +13,7 @@ import RegisterView from '@/views/RegisterView.vue'
 import ContactView from '@/views/ContactView.vue'
 import { useUserStore } from '@/stores/user'
 import ContribueView from '@/views/ContribueView.vue'
+import MergeView from '@/views/MergeView.vue'
 
 const requireAuth: NavigationGuardWithThis<undefined> = (
   to: RouteLocationNormalized,
@@ -56,6 +57,11 @@ const router = createRouter({
       path: '/register',
       name: 'register',
       component: RegisterView,
+    },
+    {
+      path: '/merge',
+      name: 'merge',
+      component: MergeView,
     },
     {
       path: '/manage',

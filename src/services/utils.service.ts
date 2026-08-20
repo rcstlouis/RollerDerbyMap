@@ -26,3 +26,7 @@ export function leaguesFilteredOn(searchstring: string) {
     league.city.toLocaleLowerCase().includes(searchstring.toLocaleLowerCase()) ||
     league.name.toLocaleLowerCase().includes(searchstring.toLocaleLowerCase())
 }
+
+export function mergeLists(listA: string[] | undefined, listB: string[] | undefined): string[] {
+  return [...new Set([...(listA ?? []), ...(listB ?? [])])]
+}
