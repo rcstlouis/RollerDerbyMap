@@ -96,7 +96,8 @@ function getColor(
       <v-row gap="8">
         <v-col cols="12" sm="4">
           <v-card color="grey-darken-1" style="padding: 8px">
-            <v-sheet :color="getColor('name', 'base')" style="margin-bottom: 4px">
+            <v-sheet :color="getColor('name', 'base')" style="margin-bottom: 4px" class="d-flex">
+              <v-chip @click="() => setPatternItem('name', 'base')"> ✓ </v-chip>
               <h3 v-html="leagueMergeManager?.base.name"></h3>
             </v-sheet>
 
@@ -127,7 +128,7 @@ function getColor(
               Logo: {{ leagueMergeManager?.base.logo }}
             </v-sheet>
             <v-sheet :color="getColor('rulesets', 'base')" class="d-flex">
-              <v-chip @click="() => setPatternItem('rulesets', 'base')"> ✓ </v-chip>
+              <v-chip disabled @click="() => setPatternItem('rulesets', 'base')"> ✓ </v-chip>
               Rulesets: {{ leagueMergeManager?.base.rulesets }}
             </v-sheet>
             <v-sheet :color="getColor('website', 'base')" class="d-flex">
@@ -187,7 +188,7 @@ function getColor(
               <p>Logo: {{ leagueMergeManager?.incoming.logo }}</p>
             </v-sheet>
             <v-sheet :color="getColor('rulesets', 'incoming')" class="d-flex">
-              <v-chip @click="() => setPatternItem('rulesets', 'incoming')"> ✓ </v-chip>
+              <v-chip disabled @click="() => setPatternItem('rulesets', 'incoming')"> ✓ </v-chip>
               <p>Rulesets: {{ leagueMergeManager?.incoming.rulesets }}</p>
             </v-sheet>
             <v-sheet :color="getColor('website', 'incoming')" class="d-flex">

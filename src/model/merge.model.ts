@@ -259,94 +259,56 @@ export class SingleLeagueMergeManager {
 
   getMergedLeague(): LeagueRecord {
     let id = undefined
-    if (this.mergePatternOverrides?.id ?? this.mergePatternDefault?.id === 'base') id = this.base.id
-    if (this.mergePatternOverrides?.id ?? this.mergePatternDefault?.id === 'incoming')
-      id = this.incoming?.id
+    if (this.getPatternItem('id') === 'base') id = this.base.id
+    if (this.getPatternItem('id') === 'incoming') id = this.incoming?.id
 
     let name: string | undefined = undefined
-    if (this.mergePatternOverrides?.name ?? this.mergePatternDefault?.name === 'base')
-      name = this.base.name
-    else if (this.mergePatternOverrides?.name ?? this.mergePatternDefault?.name === 'incoming')
-      name = this.incoming?.name
+    if (this.getPatternItem('name') === 'base') name = this.base.name
+    else if (this.getPatternItem('name') === 'incoming') name = this.incoming?.name
 
     let country: string | undefined = undefined
-    if (this.mergePatternOverrides?.country ?? this.mergePatternDefault?.country === 'base')
-      country = this.base.country
-    else if (
-      this.mergePatternOverrides?.country ??
-      this.mergePatternDefault?.country === 'incoming'
-    )
-      country = this.incoming?.country
+    if (this.getPatternItem('country') === 'base') country = this.base.country
+    else if (this.getPatternItem('country') === 'incoming') country = this.incoming?.country
 
     let state: string | undefined = undefined
-    if (this.mergePatternOverrides?.state ?? this.mergePatternDefault?.state === 'base')
-      state = this.base.state
-    else if (this.mergePatternOverrides?.state ?? this.mergePatternDefault?.state === 'incoming')
-      state = this.incoming?.state
+    if (this.getPatternItem('state') === 'base') state = this.base.state
+    else if (this.getPatternItem('state') === 'incoming') state = this.incoming?.state
 
     let city: string | undefined = undefined
-    if (this.mergePatternOverrides?.city ?? this.mergePatternDefault?.city === 'base')
-      city = this.base.city
-    else if (this.mergePatternOverrides?.city ?? this.mergePatternDefault?.city === 'incoming')
-      city = this.incoming?.city
+    if (this.getPatternItem('city') === 'base') city = this.base.city
+    else if (this.getPatternItem('city') === 'incoming') city = this.incoming?.city
 
     let lat: number | undefined = undefined
-    if (this.mergePatternOverrides?.lat ?? this.mergePatternDefault?.lat === 'base')
-      lat = this.base.lat
-    else if (this.mergePatternOverrides?.lat ?? this.mergePatternDefault?.lat === 'incoming')
-      lat = this.incoming?.lat
+    if (this.getPatternItem('lat') === 'base') lat = this.base.lat
+    else if (this.getPatternItem('lat') === 'incoming') lat = this.incoming?.lat
 
     let lng: number | undefined = undefined
-    if (this.mergePatternOverrides?.lng ?? this.mergePatternDefault?.lng === 'base')
-      lng = this.base.lng
-    else if (this.mergePatternOverrides?.lng ?? this.mergePatternDefault?.lng === 'incoming')
-      lng = this.incoming?.lng
+    if (this.getPatternItem('lng') === 'base') lng = this.base.lng
+    else if (this.getPatternItem('lng') === 'incoming') lng = this.incoming?.lng
 
     let logo: string | undefined = undefined
-    if (this.mergePatternOverrides?.logo ?? this.mergePatternDefault?.logo === 'base')
-      logo = this.base.logo
-    else if (this.mergePatternOverrides?.logo ?? this.mergePatternDefault?.logo === 'incoming')
-      logo = this.incoming?.logo
+    if (this.getPatternItem('logo') === 'base') logo = this.base.logo
+    else if (this.getPatternItem('logo') === 'incoming') logo = this.incoming?.logo
 
     let rulesets: RulesetName[] = []
-    if (this.mergePatternOverrides?.rulesets ?? this.mergePatternDefault?.rulesets === 'base')
-      rulesets = this.base.rulesets
-    else if (
-      this.mergePatternOverrides?.rulesets ??
-      this.mergePatternDefault?.rulesets === 'incoming'
-    )
+    if (this.getPatternItem('rulesets') === 'base') rulesets = this.base.rulesets
+    else if (this.getPatternItem('rulesets') === 'incoming')
       rulesets = this.incoming?.rulesets ?? this.base.rulesets
-    else if (this.mergePatternOverrides?.rulesets ?? this.mergePatternDefault?.rulesets === 'merge')
+    else if (this.getPatternItem('rulesets') === 'merge')
       rulesets = mergeLists(this.base.rulesets, this.incoming?.rulesets) as RulesetName[]
 
     let website: string | undefined = undefined
-    if (this.mergePatternOverrides?.website ?? this.mergePatternDefault?.website === 'base')
-      website = this.base.website
-    else if (
-      this.mergePatternOverrides?.website ??
-      this.mergePatternDefault?.website === 'incoming'
-    )
-      website = this.incoming?.website
+    if (this.getPatternItem('website') === 'base') website = this.base.website
+    else if (this.getPatternItem('website') === 'incoming') website = this.incoming?.website
 
     let wftdaWebsite: string | undefined = undefined
-    if (
-      this.mergePatternOverrides?.wftdaWebsite ??
-      this.mergePatternDefault?.wftdaWebsite === 'base'
-    )
-      wftdaWebsite = this.base.wftdaWebsite
-    else if (
-      this.mergePatternOverrides?.wftdaWebsite ??
-      this.mergePatternDefault?.wftdaWebsite === 'incoming'
-    )
+    if (this.getPatternItem('wftdaWebsite') === 'base') wftdaWebsite = this.base.wftdaWebsite
+    else if (this.getPatternItem('wftdaWebsite') === 'incoming')
       wftdaWebsite = this.incoming?.wftdaWebsite
 
     let lastActive: Date | undefined = undefined
-    if (this.mergePatternOverrides?.lastActive ?? this.mergePatternDefault?.lastActive === 'base')
-      lastActive = this.base.lastActive
-    else if (
-      this.mergePatternOverrides?.lastActive ??
-      this.mergePatternDefault?.lastActive === 'incoming'
-    )
+    if (this.getPatternItem('lastActive') === 'base') lastActive = this.base.lastActive
+    else if (this.getPatternItem('lastActive') === 'incoming')
       lastActive = this.incoming?.lastActive
     else if (this.getPatternItem('lastActive') === 'merge') {
       lastActive =
@@ -356,11 +318,9 @@ export class SingleLeagueMergeManager {
     }
 
     let tags: string[] = []
-    if (this.mergePatternOverrides?.tags ?? this.mergePatternDefault?.tags === 'base')
-      tags = this.base.tags ?? []
-    else if (this.mergePatternOverrides?.tags ?? this.mergePatternDefault?.tags === 'incoming')
-      tags = this.incoming?.tags ?? []
-    else if (this.mergePatternOverrides?.tags ?? this.mergePatternDefault?.tags === 'merge')
+    if (this.getPatternItem('tags') === 'base') tags = this.base.tags ?? []
+    else if (this.getPatternItem('tags') === 'incoming') tags = this.incoming?.tags ?? []
+    else if (this.mergePatternOverrides?.tags ?? this.getPatternItem('tags') === 'merge')
       tags = mergeLists(this.base.tags, this.incoming?.tags)
 
     const mergedLeagueRecord: LeagueRecord = {
